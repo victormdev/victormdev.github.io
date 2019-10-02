@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Victor Macedo - Desenvolvedor</title>
+    <meta name="description" content="Desenvolvimento de software, design e marketing digital.">
+    <meta name="author" content="Victor Macedo">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <script>
+        function typeWrite(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(function () {
+                    elemento.innerHTML += letra
+                }, 125 * i)
+
+            });
+
+        }
+        const titulo = document.querySelector('h1')
+        typeWrite(titulo);
+    </script>
+</head>
+
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <h1>VM</h1>
+            </a>
+        </div> <!-- end header-logo -->
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Fechar</span></a>
+
+            <h3>Navegar para</h3>
+
+            <div class="header-nav__content">
+
+                <ul class="header-nav__list">
+                    <li><a class="smoothscroll" href="#home" title="home">Início</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">Sobre</a></li>
+                    <li><a class="smoothscroll" href="#services" title="services">Serviços</a></li>
+                    <li><a class="smoothscroll" href="#works" title="works">Tecnologias</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="contact">Contato</a></li>
+                </ul>
+
+                <p>Desde sempre, fui apaixonado por tecnologias em geral e tive a oportunidade de consolidar o meu nome
+                    e seguir na área de T.I. com o fruto do meu esforço.</p>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
+        data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="grid-overlay">
+            <div></div>
+        </div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h1 class="anim" style="font-weight: 700; font-size: 50px; line-height: 1; color: #FFFFFF;"> Victor
+                    Macedo Desenvolvedor
+                </h1>
+
+                <h3> Desenvolvimento de software, design e marketing digital. </h3>
+
+
+                <div class="home-content__button">
+                    <a href="#about" class="smoothscroll btn btn--primary btn--large">
+                        Sobre mim
+                    </a>
+                    <a href="#contact" class="smoothscroll btn btn--large">
+                        Contato
+                    </a>
+                </div>
+
+            </div> <!-- end home-content__main -->
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    Role pra baixo
+                </a>
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="https://www.facebook.com/victormdev" target="_blank"><i class="fab fa-facebook-f"
+                        aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/vmdev/" target="_blank"><i class="fab fa-linkedin"
+                        aria-hidden="true"></i><span>Linkedin</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/victormacedo.xo" target="_blank"><i class="fab fa-instagram"
+                        aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+        </ul> <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Quem sou eu?</h3>
+                <h1 class="display-1">
+                    Apaixonado por tecnologia e no impacto que ela pode causar em nossas vidas!
+                </h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                    Atualmente, graduando Análise e Desenvolvimento de Sistemas no Instituto Federal de Educação,
+                    Ciência e Tecnologia da Bahia. Desde três anos atrás, eu venho estudando e trabalhando,
+                    exclusivamente, no ambiente web e mobile. Decidi sair da zona de conforto e estou inserido, também,
+                    em Inteligência Artificial, IoT e chatbots em clientes de diferentes seguimentos. Sou responsável
+                    pelo planejamento, pela elaboração e execução de projetos de tais tecnologias. Eu tenho a capacidade
+                    de projetar e desenvolver belas aplicações e sites responsivos, sempre visando a usabilidade do
+                    usuário. Eu também tenho a capacidade de projetar estruturas de back-end usando API REST e tenho
+                    sólidos conhecimentos em DBMS para arquitetar banco de dados com usabilidade. Com o tempo, adquiri
+                    metodologias e olhar crítico para resolver problemas.
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+        <div class="row bit-narrow">
+
+            <div class="about-process process block-1-2 block-tab-full">
+
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Criação de sites</h4>
+                        <p>
+                            Criação de sites profissionais com mais de 3 anos de experiência. Projetos com clientes de
+                            diversos nichos.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Design</h4>
+                        <p>Olhar crítico e ideias criativas para impulsionar o seu negócio, marca ou ideia.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Marketing Digital</h4>
+                        <p>Entendo que o processo/produto precisa interagir com pessoas e não com consumidores.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">Manutenção de sites</h4>
+                        <p>Muitas empresas têm um site desatualizado ou com erros por não ter mais contato ou atenção do
+                            programador, eu tenho a solução.
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- end process -->
+
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services target-section darker">
+
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Acha que é só isso? Veja alguns diferenciais que costumo agregar aos projetos.</h3>
+                <h1 class="display-1"></h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row bit-narrow services block-1-2 block-tab-full">
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-star"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Identidade visual</h3>
+                    <p>Adoção de estratégias para a garantia da sua imagem, de forma única e autêntica, de modo em que
+                        você se sobressaia e saia do padrão.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Websites responsivos</h3>
+                    <p>Os tamanhos das telas estão sempre mudando, então é importante que seu site possa se adaptar a
+                        qualquer tamanho de tela. Ou seja, todos vão conseguir te ver.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-pie-chart"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Marketing</h3>
+                    <p>O intuito dessa prática é gerar novos negócios, criar e desenvolver relacionamentos, divulgar e
+                        solidificar a identidade de marcas, negócios, projetos ou pessoas de maneira mais ágil e
+                        assertiva.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-image"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Design Gráfico</h3>
+                    <p>Ordenamento estético-formal de elementos textuais e não-textuais que compõem peças gráficas
+                        destinadas à reprodução com objetivo expressamente comunicacional.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">UI/UX Design</h3>
+                    <p>Desenvolvimento aplicações, softwares e sítios web com o foco na experiência do utilizadores e
+                        interação.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon"><i class="icon-lego-block"></i></div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Imersão Digital</h3>
+                    <p>Estudo profundo do seu propósito, análise de mercado e modelo de negócio, e então decodificação
+                        da sua empresa para o ambiente digital. </p>
+                </div>
+            </div>
+
+        </div> <!-- end services -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row section-header has-bottom-sep narrow target-section" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Hard Skills</h3>
+                <h1 class="display-1">
+                    Tecnologias de maior utilização
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row masonry-wrap">
+
+            <div class="masonry">
+
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">► Front-End</h4>
+                        <p>→ HTML, CSS, Javascript e seus frameworks/bibliotecas, jQuery, Angular, Vue.js, TypeScript...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">► Back-End</h4>
+                        <p>→ API REST com node.js, C#, Python, C++, PHP...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">► Banco de Dados</h4>
+                        <p>→ MySQL e PostgreSQL.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block item-process" data-aos="fade-up">
+                    <div class="item-process__text">
+                        <h4 class="item-title">► Inteligência Artificial - I.A.</h4>
+                        <p>→ IBM Watson, AWS, Azure, criação de redes neurais e chatbots, node-RED...
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- end masonry -->
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-works -->
+
+    <!-- testimonies
+    ================================================== -->
+    <section class="s-testimonials">
+
+        <div class="testimonials__icon" data-aos="fade-up"></div>
+
+        <div class="row testimonials narrow">
+
+            <div class="col-full testimonials__slider" data-aos="fade-up">
+
+                <div class="testimonials__slide">
+                    <p>Make your life more responsive.</p>
+                    <div class="testimonials__author">
+                        Victor Macedo
+                        <span>Analista de Sistemas<br>X-Testing</span>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </section> <!-- end s-testimonials -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="grid-overlay">
+            <div></div>
+        </div>
+
+        <div class="row section-header narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contato</h3>
+                <h1 class="display-1">Entre em contato para o seu projeto.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="col-full">
+                <p class="contact-email">
+                    <a href="mailto:#vmadevops@gmail.com">vmadevops@gmail.com</a>
+                </p>
+                <p class="contact-address">
+                    Rua Silveira Martins, nº 150 <br> Salvador/BA - Brasil
+                </p>
+                <p class="contact-numbers">
+                    +55 71 99206-8839
+                </p>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="https://www.facebook.com/victormdev" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/victormacedo.xo" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vmdev/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full ss-copyright">
+                <span>© 2019, Victor Macedo</span>
+                <span>Alguns direitos reservados.</span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">Voltar pra o topo</a>
+        </div>
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+    <div class="wa__btn_popup">
+        <div class="wa__btn_popup_icon"><a
+                href="https://api.whatsapp.com/send?phone=5571992068839&text=Olá,%20Victor!%20Estou%20entrando%20em%20contato%20através%20do%20seu%20site!"
+                target="_blank"><img src="images/wpp.png"></a></div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function typeWrite(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(function () {
+                    elemento.innerHTML += letra
+                }, 125 * i)
+
+            });
+
+        }
+        const titulo = document.querySelector('h1')
+        typeWrite(titulo);
+    </script>
+</body>
