@@ -30,19 +30,26 @@
     <link rel="icon" href="favicon.png" type="image/x-icon">
 
     <script>
-        function typeWrite(elemento) {
-            const textoArray = elemento.innerHTML.split('');
-            elemento.innerHTML = '';
-            textoArray.forEach((letra, i) => {
-                setTimeout(function () {
-                    elemento.innerHTML += letra
-                }, 125 * i)
+        function typeWrite (elemento) {
+   const textoArray = elemento.innerHTML.split('');
+   elemento.innerHTML = '';
+   textoArray.forEach((letra, i) => {
+      setTimeout(function() {
+         elemento.innerHTML += letra
+      }, 75 * i)
+      
+   });
+}
 
-            });
+const titulo = document.querySelector('h1')
+typeWrite(titulo);
 
-        }
-        const titulo = document.querySelector('h1')
-        typeWrite(titulo);
+var segundos = 4;
+
+setTimeout ( function(){
+   const titulo2 = document.querySelector('h2')
+   typeWrite(titulo2);
+}, segundos * 1000);
     </script>
 </head>
 
