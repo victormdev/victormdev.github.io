@@ -1,538 +1,654 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
+<html lang="en">
+  <head>
     <title>Victor Macedo</title>
-    <meta name="description" content="Desenvolvimento de software, design e marketing digital.">
-    <meta name="author" content="Victor Macedo">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/aos.css">
+	<link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>V</span>M</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-
-    <script>
-        function typeWrite (elemento) {
-   const textoArray = elemento.innerHTML.split('');
-   elemento.innerHTML = '';
-   textoArray.forEach((letra, i) => {
-      setTimeout(function() {
-         elemento.innerHTML += letra
-      }, 75 * i)
-      
-   });
-}
-
-const titulo = document.querySelector('h1')
-typeWrite(titulo);
-
-var segundos = 4;
-
-setTimeout ( function(){
-   const titulo2 = document.querySelector('h2')
-   typeWrite(titulo2);
-}, segundos * 1000);
-    </script>
-</head>
-
-<body id="top">
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-jump">
-            <div></div>
-            <div></div>
-            <div></div>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Início</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>Sobre</span></a></li>
+	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Áreas de atuação</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Carreira</span></a></li>
+	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Mídia</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contato</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container"  style="margin-top: -70px;">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<span class="subheading">Olá! Eu sou o</span>
+		  				<h1>Victor Macedo</h1>
+			  				<h2>E sou<source sizes="" srcset=""> 
+								  <span
+								     class="txt-rotate"
+								     data-period="2000"
+								     data-rotate='[ "Desenvolvedor Full-Stack.", "Cientista de Dados.", "apaixonado pelo que eu faço!" ]'></span>
+								</h2>
+							</div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="mouse" style="margin-top: 50px;">
+				<a href="#" class="mouse-icon">
+					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+				</a>
+			</div>
+    </section>
 
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex no-gutters">
+    			<div class="col-md-6 col-lg-6 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.png);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">Sobre mim</h1>
+		            <h2 class="mb-4">Quem sou eu?</h2>
+		            <p>Atualmente, graduando Análise e Desenvolvimento de Sistemas no Instituto Federal de Educação, Ciência e Tecnologia 
+						da Bahia e comecei cedo na área de desenvolvimento. Desde os 17 anos, eu venho estudando e trabalhando, 
+						exclusivamente, no ambiente web e mobile. Decidi sair da zona de conforto e estou inserido, também, em 
+						Inteligência Artificial, IoT e chatbots em clientes de diferentes seguimentos. Com o passar do tempo, 
+						adquiri metodologias, olhar crítico para resolver problemas e habilidades em gestão de projetos e de pessoas. 
+						Com isso, iniciei sozinho a <a href="https://ivmcode.github.io" target="_blank">VMCode</a>, uma pequena startup com foco em impulsionamento de novas empresas no mundo 
+						digital. Comecei prospectando clientes e fechando projetos, e, futuramente, pude contratar pessoas para trabalhar
+						comigo que tenho comigo até hoje. Ao final de 2019, fui chamado para ser o CTO da <a href="https://www.instagram.com/1oneproject/" 
+					   target="_blank">One Project</a>, uma agência digital que tem como foco a gestão de artistas, especificamente baianos. Hoje em dia, as pessoas 
+						me veem como um influenciador, contantemente me procuram para tirar dúvidas e saber como ingressar no mercado e eu 
+						tenho todo prazer em ajudar!</p>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+              	<p class="mb-4">
+	                <span class="number" data-number="12">12</span>
+	                <span>Projetos realizados</span>
+                </p>
+                <p><a href="#" class="btn btn-primary py-3 px-3">Baixar CV</a></p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <h1>VM</h1>
-            </a>
-        </div> <!-- end header-logo -->
+    <section class="ftco-section" id="services-section">
+    	<div class="container-fluid px-md-5">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Áreas de atuação</h1>
+            <h2 class="mb-4">Áreas de atuação</h2>
+            <p>Além de toda a bagagem técnica, eu possuo alguns diferenciais que costumo agregar aos projetos.</p>
+          </div>
+        </div>
+    		<div class="row">
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Análise técnica</h3>
+								<p>Com experiência de pesquisas acadêmicas e profissionais, eu estudo a fundo o seu propósito, de modo que venha a diminuir riscos e aumentar a produtividade e escalabilidade.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ux-design"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">UI/UX Design</h3>
+								<p>Sempre visando o lado humano, eu desenvolvo aplicações, softwares e sites web com o foco na experiência dos utilizadores.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Design Thinking</h3>
+								<p>Uso o conceito de expandir horizontes, observando aspectos cognitivos, emocionais e estéticos que afetam as experiências humanas, a fim de identificar problemas a serem solucionados.</p>
+							</div>
+						</a>
+					</div>
 
-        <nav class="header-nav">
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-innovation"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Inteligência Artificial</h3>
+								<p>Possuo conhecimentos de redes neurais que permitem construir mecanismos e/ou dispositivos que simulem a capacidade do ser humano de pensar, resolver problemas, ou seja, de ser inteligente.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ux-design"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Marketing</h3>
+								<p>O intuito dessa prática é gerar novos negócios, criar e desenvolver relacionamentos, divulgar e
+									solidificar a identidade de marcas, negócios, projetos ou pessoas de maneira mais ágil e
+									assertiva.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-idea"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Raciocínio Lógico</h3>
+								<p>Independentemente da profissão e da área em que o indivíduo atua, pensar e raciocinar de maneira crítica são competências de grande diferenciação.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+    	</div>
+    </section>
 
-            <a href="#0" class="header-nav__close" title="close"><span>Fechar</span></a>
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-3">
+				    <nav id="navi">
+					    <ul>
+						  <li style="text-align: center;"><a>Toque nos itens para navegar 👇</a></li>
+					      <li style="text-align: center;"><a href="#page-1">Educação</a></li>
+					      <li style="text-align: center;"><a href="#page-2">Experiência</a></li>
+					      <li style="text-align: center;"><a href="#page-3">Skills</a></li>
+					    </ul>
+					  </nav>
+					</div>
+					<div class="col-md-9">
+					  <div id="page-1" class= "page one">
+						  <h2 class="heading">Educação</h2>
+						  <p style="text-align: center;">Demais cursos/certificações estão no meu <a href="https://www.linkedin.com/in/vmdev/" target="_blank">LinkedIn</a></p>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2018 → 2022</span>
+		    					<h2>Análise e Desenvolvimento de Sistemas</h2>
+		    					<span class="position">Instituto Federal de Educação, Ciência e Tecnologia da Bahia</span>
+		    					<p>O curso é focado em atividades práticas, desenvolvendo habilidades para trabalhar em diversos ramos da Informática, seja criando, implementando ou desenvolvendo softwares e soluções tecnológicas para o mercado.</p>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2018 → 2018</span>
+		    					<h2>Tecnologia em Transporte Terrestre</h2>
+		    					<span class="position">Universidade Federal da Bahia</span>
+		    					<p> Estudo na área de infraestrutura de transporte e trânsito, capacitando-os a enfrentar e a resolver os problemas da área e assegurar a melhoria das condições de vida da população.</p>
+		    				</div>
+	    				</div>
+					  </div>
 
-            <h3>Navegar para</h3>
+					  <div id="page-2" class= "page two">
+					  	<h2 class="heading">Experiência</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2020 → Atualmente</span>
+		    					<h2>Desenvolvedor Full-Stack</h2>
+		    					<span class="position">Automind</span>
+		    					<p>Desenvolvimento de um portal web para auxiliar e otimizar a gestão e integridade dos sistemas de medição de petróleo, produtos químicos e biocombustíveis.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2019 → Atualmente</span>
+		    					<h2>Líder de Tecnologia</h2>
+		    					<span class="position">One Project</span>
+		    					<p>Além de atuar como desenvolvedor, sou focado em como criar e contratar tecnologias, como usar novas ferramentas para reduzir custos e aumentar a eficiência das atividades.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2019 → 2019</span>
+		    					<h2>Analista de Sistemas Jr</h2>
+		    					<span class="position">X-Testing</span>
+		    					<p>Fui responsável pela arquitetura e desenvolvimento de um portal usando Angular 8. Também fui responsável por projetos de Inteligência Artificial em clientes de diferentes segmentos e manutenção e execução de atividades e serviços relacionados a chatbot.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2018 → 2018</span>
+		    					<h2>Desenvolvedor Front-End</h2>
+		    					<span class="position">Instituto Recôncavo de Tecnologia</span>
+		    					<p>Desenvolvimento de uma aplicação web embutida no equipamento de rádio/modem para interação de um navegador web. Exibição de painel, consumo e alteração de dados usando HTML, CSS, JavaScript, AngularJS, jQuery e node.js para a implementação e manutenção de recursos.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2018 → 2019</span>
+		    					<h2>Analista de Infraestrutura de TI</h2>
+		    					<span class="position">Stagliorio Engenharia</span>
+		    					<p>Fui responsável pela administração de bancos de dados e servidores, implementação de medidas de soluções em sistemas para automação de rotinas e pela seleção, planejamento e manutenção de software / hardware;.</p>
+		    				</div>
+	    				</div>
+					  </div>
+					  <div id="page-3" class= "page three">
+					  	<h2 class="heading">Skills</h2>
+					  	<div class="row progress-circle mb-5">
+					  		<div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Front-End</h2>
 
-            <div class="header-nav__content">
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='98'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">98<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
 
-                <ul class="header-nav__list">
-                    <li><a class="smoothscroll" href="#home" title="home">Início</a></li>
-                    <li><a class="smoothscroll" href="#about" title="about">Sobre</a></li>
-                    <li><a class="smoothscroll" href="#services" title="services">Serviços</a></li>
-                    <li><a class="smoothscroll" href="#works" title="works">Tecnologias</a></li>
-                    <li><a class="smoothscroll" href="#contact" title="contact">Contato</a></li>
-                </ul>
+						      </div>
+						    </div>
 
-                <p>Desde sempre, fui apaixonado por tecnologias em geral e tive a oportunidade de consolidar o meu nome
-                    e seguir na área de T.I. com o fruto do meu esforço.</p>
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Back-End</h2>
 
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="https://www.facebook.com/victormdev" target="_blank"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/vmdev/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/victormdev" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='80'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
 
-            </div> <!-- end header-nav__content -->
+						        <!-- END -->
+						      </div>
+						    </div>
 
-        </nav> <!-- end header-nav -->
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">I.A</h2>
 
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-icon"></span>
-        </a>
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='75'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
 
-    </header> <!-- end s-header -->
+						      </div>
+						    </div>
+					  	</div>
+					  	<div class="row">
+					  		<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>HTML</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:100%">
+										    <span>100%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>CSS</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="98"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:98%">
+										    <span>98%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>JavaScript</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="90"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										    <span>90%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Angular</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										    <span>90%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>node.js</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="75"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+										    <span>75%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>IBM Watson</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="60"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
+										    <span>60%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+					  	</div>
+					  </div>
+					</div>
+			  </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    	<div class="container-fluid px-md-5">
+				<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="12">12</strong>
+                <span>Projetos realizados</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="4">4</strong>
+                <span>Projetos em andamento</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
-        data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section class="ftco-section" id="blog-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Blog</h1>
+            <h2 class="mb-4">Artigos</h2>
+            <p>Alguns dos textos e artigos que foram publicados por mim.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://www.linkedin.com/pulse/como-chamar-o-profissionalespecialista-que-projeta-e-cria-macedo/" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://www.linkedin.com/pulse/como-chamar-o-profissionalespecialista-que-projeta-e-cria-macedo/" target="_blank">💡 Como chamar o profissional/especialista que projeta e cria chatbots?</a></h3>
+                <div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-2">Oct. 18, 2019</span>
+	                	<a href="#" class="mr-2">Por Victor Macedo</a>
+	                	<a href="#" class="meta-chat"><span class="icon-heart"></span> 7</a>
+	                </p>
+                </div>
+                <p>Esse pequeno texto é somente para bater um papo sobre um insight que eu tive esses dias. Todos estão presenciando a chegada...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="grid-overlay">
-            <div></div>
+    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
+    	<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Também estou <span>disponível</span> para freelance</h2>
+						<p>Quando tenho tempo livre, também costumo atuar como freelancer e ajudar em demais projetos.</p>
+						<p class="mb-0"><a href="https://api.whatsapp.com/send?phone=5571992068839&text=Olá,%20Victor!%20Estou%20entrando%20em%20contato%20através%20do%20seu%20site!" target="_blank" class="btn btn-primary py-3 px-5">Entre em contato <img src="images/wpp.png" style="width: 20px; height: 20px;"/></a> </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contato</h1>
+            <h2 class="mb-4">Contato</h2>
+            <p>Alguns meios de contato pra garantir a eficiência no tempo de resposta.</p>
+          </div>
         </div>
 
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <h1 class="anim" style="font-weight: 700; font-size: 50px; line-height: 1; color: #FFFFFF;"> Victor
-                    Macedo<br>
-                </h1>
-
-                <h3 style="margin-top: 10px;">Analista de Sistemas → Analista de Negócios → Cientista de Dados
-                </h3>
-                <div class="home-content__button">
-                    <a href="#about" class="smoothscroll btn btn--primary btn--large">
-                        Sobre mim
-                    </a>
-                    <a href="#contact" class="smoothscroll btn btn--large">
-                        Contato
-                    </a>
-                </div>
-
-            </div> <!-- end home-content__main -->
-
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    Role pra baixo
-                </a>
-            </div>
-
-        </div> <!-- end home-content -->
-
-        <ul class="home-social">
-            <li>
-                <a href="https://www.facebook.com/victormdev" target="_blank"><i class="fab fa-facebook-f"
-                        aria-hidden="true"></i><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/vmdev/" target="_blank"><i class="fab fa-linkedin"
-                        aria-hidden="true"></i><span>Linkedin</span></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/victormdev" target="_blank"><i class="fab fa-instagram"
-                        aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-        </ul> <!-- end home-social -->
-
-    </section> <!-- end s-home -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="row section-header bit-narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Quem sou eu?</h3>
-                <h1 class="display-1">
-                    Apaixonado por tecnologia e no impacto que ela pode causar em nossas vidas!
-                </h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row bit-narrow" data-aos="fade-up">
-            <div class="col-full">
-                <p class="lead">
-                    Atualmente, graduando Análise e Desenvolvimento de Sistemas no Instituto Federal de Educação, Ciência e Tecnologia 
-                    da Bahia e comecei cedo na área de desenvolvimento. Desde os 17 anos, eu venho estudando e trabalhando, 
-                    exclusivamente, no ambiente web e mobile. Decidi sair da zona de conforto e estou inserido, também, em 
-                    Inteligência Artificial, IoT e chatbots em clientes de diferentes seguimentos. Com o passar do tempo, 
-                    adquiri metodologias, olhar crítico para resolver problemas e habilidades em gestão de projetos e de pessoas. 
-                    Com isso, iniciei sozinho a <a href="https://ivmcode.github.io" target="_blank">VMCode</a>, uma pequena startup com foco em impulsionamento de novas empresas no mundo 
-                    digital. Comecei prospectando clientes e fechando projetos, e, futuramente, pude contratar pessoas para trabalhar
-                    comigo que tenho comigo até hoje. Ao final de 2019, fui chamado para ser o CTO da <a href="https://www.instagram.com/1oneproject/" 
-                   target="_blank">One Project</a>, uma agência digital que tem como foco a gestão de artistas, especificamente baianos. Hoje em dia, as pessoas 
-                    me veem como um influenciador, contantemente me procuram para tirar dúvidas e saber como ingressar no mercado e eu 
-                    tenho todo prazer em ajudar!
-                </p>
-            </div>
-        </div> <!-- end about-desc -->
-
-        <div class="row bit-narrow">
-
-            <div class="about-process process block-1-2 block-tab-full">
-
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-process__text">
-                        <h4 class="item-title">Criação de sites</h4>
-                        <p style="color: rgb(226, 219, 219);">
-                            Criação de sites profissionais com mais de 3 anos de experiência. Projetos com clientes de
-                            diversos nichos.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-process__text">
-                        <h4 class="item-title">Design</h4>
-                        <p style="color: rgb(226, 219, 219);">Olhar crítico e ideias criativas para impulsionar o seu negócio, marca ou ideia.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-process__text">
-                        <h4 class="item-title">Marketing Digital</h4>
-                        <p style="color: rgb(226, 219, 219);">Entendo que o processo/produto precisa interagir com pessoas e não com consumidores.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-process__text">
-                        <h4 class="item-title">Manutenção de sites</h4>
-                        <p style="color: rgb(226, 219, 219);">Muitas empresas têm um site desatualizado ou com erros por não ter mais contato ou atenção do
-                            programador, eu tenho a solução.
-                        </p>
-                    </div>
-                </div>
-
-            </div> <!-- end process -->
-
-        </div> <!-- end row -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id='services' class="s-services target-section darker">
-
-        <div class="row section-header bit-narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Acha que é só isso? Veja alguns diferenciais que costumo agregar aos projetos.</h3>
-                <h1 class="display-1"></h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row bit-narrow services block-1-2 block-tab-full">
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-star"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Identidade visual</h3>
-                    <p style="color: rgb(226, 219, 219);">Adoção de estratégias para a garantia da sua imagem, de forma única e autêntica, de modo em que
-                        você se sobressaia e saia do padrão.</p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-group"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Websites responsivos</h3>
-                    <p style="color: rgb(226, 219, 219);">Os tamanhos das telas estão sempre mudando, então é importante que seu site possa se adaptar a
-                        qualquer tamanho de tela. Ou seja, todos vão conseguir te ver.</p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-pie-chart"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Marketing</h3>
-                    <p style="color: rgb(226, 219, 219);">O intuito dessa prática é gerar novos negócios, criar e desenvolver relacionamentos, divulgar e
-                        solidificar a identidade de marcas, negócios, projetos ou pessoas de maneira mais ágil e
-                        assertiva.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-image"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Design Gráfico</h3>
-                    <p style="color: rgb(226, 219, 219);">Ordenamento estético-formal de elementos textuais e não-textuais que compõem peças gráficas
-                        destinadas à reprodução com objetivo expressamente comunicacional.</p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-cube"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">UI/UX Design</h3>
-                    <p style="color: rgb(226, 219, 219);">Desenvolvimento aplicações, softwares e sítios web com o foco na experiência do utilizadores e
-                        interação.</p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon"><i class="icon-lego-block"></i></div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Imersão Digital</h3>
-                    <p style="color: rgb(226, 219, 219);">Estudo profundo do seu propósito, análise de mercado e modelo de negócio, e então decodificação
-                        da sua empresa para o ambiente digital. </p>
-                </div>
-            </div>
-
-        </div> <!-- end services -->
-
-    </section> <!-- end s-services -->
-
-
-    <!-- works
-    ================================================== -->
-    <section id="works" class="s-works target-section">
-
-        <div class="row section-header has-bottom-sep narrow target-section" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Hard Skills</h3>
-                <h1 class="display-1">
-                    Tecnologias de maior utilização
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row masonry-wrap">
-
-            <div class="masonry">
-
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-process__text">
-                        <h4 class="item-title">► Front-End</h4>
-                        <p style="color: rgb(226, 219, 219);">→ HTML, CSS, Javascript e seus frameworks/bibliotecas, jQuery, Angular, Vue.js, TypeScript...
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-process__text">
-                        <h4 class="item-title">► Back-End</h4>
-                        <p style="color: rgb(226, 219, 219);">→ API REST com node.js, C#, Python, C++, PHP...
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-process__text">
-                        <h4 class="item-title">► Banco de Dados</h4>
-                        <p style="color: rgb(226, 219, 219);">→ MySQL e PostgreSQL.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-block item-process" data-aos="fade-up">
-                    <div class="item-process__text">
-                        <h4 class="item-title">► Inteligência Artificial - I.A.</h4>
-                        <p style="color: rgb(226, 219, 219);">→ IBM Watson, AWS, Azure, criação de redes neurais e chatbots, node-RED...
-                        </p>
-                    </div>
-                </div>
-
-            </div> <!-- end masonry -->
-
-        </div> <!-- end masonry-wrap -->
-
-    </section> <!-- end s-works -->
-
-    <!-- testimonies
-    ================================================== -->
-    <section class="s-testimonials">
-
-        <div class="testimonials__icon" data-aos="fade-up"></div>
-
-        <div class="row testimonials narrow">
-
-            <div class="col-full testimonials__slider" data-aos="fade-up">
-
-                <div class="testimonials__slide">
-                    <p>Make your life more responsive.</p>
-                    <div class="testimonials__author">
-                        Victor Macedo
-                        <span>Analista de Sistemas | <a href="https://www.automind.com.br/" target="_blank">Automind</a></span>
-                        <span>CEO | <a href="http://ivmcode.github.io" target="_blank">VMCode</a></span>
-                        <span>CTO | <a href="http://instagram.com/1oneproject/" target="_blank">One Project</a></span>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-
-            </div> <!-- end testimonials__slider -->
-
-        </div> <!-- end testimonials -->
-
-    </section> <!-- end s-testimonials -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
-
-        <div class="grid-overlay">
-            <div></div>
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-whatsapp"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Número (WhatsApp)</h3>
+		            <p><a href="tel://1234567920">+55 71 992068839</a></p>
+	            </div>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">E-mail</h3>
+		            <p><a href="mailto:vmadevops@gmail.com">vmadevops@gmail.com</a></p>
+		          </div>
+	          </div>
+          </div>
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box text-center p-4 shadow">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-instagram"></span>
+				</div>
+				<div>
+					<h3 class="mb-4">Instagram</h3>
+				  <p><a href="https://instagram.com/victormdev/" target="_blank">@victormdev</a></p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<div class="align-self-stretch box text-center p-4 shadow">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-globe"></span>
+				</div>
+				<div>
+					<h3 class="mb-4">VMCode</h3>
+				  <p><a href="https://ivmcode.github.io">ivmcode.github.io</a></p>
+			  </div>
+			</div>
+		</div>
         </div>
 
-        <div class="row section-header narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Contato</h3>
-                <h1 class="display-1">Entre em contato para o seu projeto.</h1>
-            </div>
-        </div> <!-- end section-header -->
+      </div>
+    </section>
+		
 
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="col-full">
-                <p class="contact-email">
-                    <a href="mailto:#vmadevops@gmail.com">vmadevops@gmail.com</a>
-                </p>
-                <p class="contact-address">
-                    Rua Silveira Martins, nº 150 <br> Salvador/BA - Brasil
-                </p>
-                <p class="contact-numbers">
-                    +55 71 99206-8839
-                </p>
-
-                <ul class="contact-social">
-                    <li>
-                        <a href="https://www.facebook.com/victormdev" target="_blank"><i
-                                class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/victormdev" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/vmdev/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                </ul>
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Sobre este site</h2>
+              <p>Este site foi desenvolvido por mim com o objetivo de mostrar um pouco sobre a minha vida acadêmica e profissional.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://www.linkedin.com/in/vmdev/" target="_blank"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/victormdev/" target="_blank"><span class="icon-instagram"></span></a></li>
+              </ul>
             </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Início</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>Sobre</a></li>
+                <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Serviços</a></li>
+                <li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Carreira</a></li>
+                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contato</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Áreas de atuação</h2>
+              <ul class="list-unstyled">
+                <li class="nav-item"><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Análise técnica</a></li>
+                <li class="nav-item"><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>UI/UX Design</a></li>
+                <li class="nav-item"><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Design Thinking</a></li>
+                <li class="nav-item"><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Inteligência Artificial</a></li>
+                <li class="nav-item"><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Marketing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Tem alguma pergunta?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="text">Tento ser o mais objetivo possível no meu raio-X. 😅 <br> Mas, no caso de dúvidas, é só entrar em contato comigo e eu terei prazer em respondê-las.</span></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
         </div>
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
         <div class="row">
-            <div class="col-full ss-copyright">
-                <span>© 2019, Victor Macedo</span>
-                <span>Alguns direitos reservados.</span>
-            </div>
-        </div>
+          <div class="col-md-12 text-center">
 
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">Voltar pra o topo</a>
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Todos os direitos reservados. <br> Este site foi desenvolvido por <a href="https://www.linkedin.com/in/vmdev/">Victor Macedo</a>.
+  </p>
+          </div>
         </div>
+      </div>
     </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
-                        title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
-                        title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div> <!-- end photoSwipe background -->
-
-    <div class="wa__btn_popup">
-        <div class="wa__btn_popup_icon"><a
-                href="https://api.whatsapp.com/send?phone=5571992068839&text=Olá,%20Victor!%20Estou%20entrando%20em%20contato%20através%20do%20seu%20site!"
-                target="_blank"><img src="images/wpp.png"></a></div>
-    </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        function typeWrite(elemento) {
-            const textoArray = elemento.innerHTML.split('');
-            elemento.innerHTML = '';
-            textoArray.forEach((letra, i) => {
-                setTimeout(function () {
-                    elemento.innerHTML += letra
-                }, 125 * i)
-
-            });
-
-        }
-        const titulo = document.querySelector('h1')
-        typeWrite(titulo);
-    </script>
-</body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
