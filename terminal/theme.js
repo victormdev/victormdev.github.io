@@ -3,7 +3,7 @@ const themes = () =>{
     terminal.insertAdjacentHTML("beforeend", 
     `<p class="result">
       <ul>
-        <li>Voici la liste des <code>themes</code> disponibles :</li>
+        <li>Veja a lista dos <code>temas</code> disponíveis :</li>
         <ol>
           <li>dracula</li>
           <li>dark</li>
@@ -11,14 +11,14 @@ const themes = () =>{
           <li>medallion</li>
         </ol>
       </ul><br>
-      <p class="result">Vous pouvez choisir un theme en écrivant dans la commande le nom de votre theme ou le numero de ce dernier. Validez ensuite votre commande en appuyant sur <em>Entrer</em></p><br>
-      <p class="result">/!\\ pour revenir sur le menu principal veuillez utiliser la commande <code>exit</code>.</p>
+      <p class="result">Você pode escolher um tema escrevendo na ordem o nome do seu tema ou seu número. Em seguida, valide seu pedido pressionando <em>Enter</em></p><br>
+      <p class="result">/!\\ para retornar ao menu principal use o comando <code>exit</code>.</p>
     </p>`);
   } else {
     terminal.insertAdjacentHTML("beforeend", 
     `<p class="result">
       <ul>
-        <li>Voici la liste des <code>themes</code> disponibles :</li>
+        <li>Veja a lista dos <code>themes</code> disponíveis :</li>
         <ol>
           <li>dracula</li>
           <li>dark</li>
@@ -29,8 +29,8 @@ const themes = () =>{
           <li>hello kitty</li>
         </ol>
       </ul><br>
-      <p class="result">Vous pouvez choisir un theme en écrivant dans la commande le nom de votre theme ou le numero de ce dernier. Validez ensuite votre commande en appuyant sur <em>Entrer</em></p><br>
-      <p class="result">/!\\ pour revenir sur le menu principal veuillez utiliser la commande <code>exit</code>.</p>
+      <p class="result">Você pode escolher um tema escrevendo na ordem o nome do seu tema ou seu número. Em seguida, valide seu pedido pressionando <em>Enter</em></p><br>
+      <p class="result">/!\\ para retornar ao menu principal use o comando <code>exit</code>.</p>
     </p>`);
   }
   
@@ -40,12 +40,12 @@ const check = () =>{
   if (numberTheme === theme){
     terminal.insertAdjacentHTML("beforeend", 
         `<p class="result">
-          Votre terminal est deja sous le theme <code>${nameTheme}</code>. 
+          Seu terminal já está sob o tema <code>${nameTheme}</code>. 
         </p>`);
   } else {
     terminal.insertAdjacentHTML("beforeend", 
         `<p class="result">
-          Votre terminal est désormais sous le theme <code>${nameTheme}</code>. 
+          Seu terminal agora está sob o tema <code>${nameTheme}</code>. 
         </p>`);
     theme = numberTheme;
   }

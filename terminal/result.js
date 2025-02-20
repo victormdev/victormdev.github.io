@@ -150,7 +150,7 @@ const ls = (y, result, secret) =>{
     terminal.insertAdjacentHTML("beforeend", 
           `<div class="result ls">
             <div>list-secret</div>
-            <div><code>Guillaume REYGNER</code></div>
+            <div><code>Victor MACEDO</code></div>
           </div>`);
   } else if (y === -1 && result === "ls -a"){
     terminal.insertAdjacentHTML("beforeend",  
@@ -158,7 +158,7 @@ const ls = (y, result, secret) =>{
       <div><code>.</code></div>
       <div><code>.secret</code></div>
       <div>list-secret</div>
-      <div><code>Guillaume REYGNER</code></div>
+      <div><code>Victor MACEDO</code></div>
     </div>`);
   }
 }
