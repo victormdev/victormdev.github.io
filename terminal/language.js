@@ -21,14 +21,11 @@ var data = {
     <li><em>Você pode ver os comandos anteriores com as setas pra cima e pra baixo</em></li>`,
 
     "aboutme" : `{<br>
-      &nbsp;&nbsp;&nbsp;"name" : "Guillaume REYGNER",<br>
-      &nbsp;&nbsp;&nbsp;"formation": "Developer 1200h in 6 months - The Hacking Project",<br>
-      &nbsp;&nbsp;&nbsp;"language" : "JS, SCSS, HTML, CSS, Ruby, Git",<br>
-      &nbsp;&nbsp;&nbsp;"framework" : "React, Rails",<br>
-      &nbsp;&nbsp;&nbsp;"tools": "GitHub, Heroku, Figma",<br>
-      &nbsp;&nbsp;&nbsp;"softSkills": "Agile Method, Teamwork",<br>
-      &nbsp;&nbsp;&nbsp;"favoriteIDE": "VS Code",<br>
-      &nbsp;&nbsp;&nbsp;"city" : "Lyon, France"<br>
+      &nbsp;&nbsp;&nbsp;"name" : "Victor MACEDO",<br>
+      &nbsp;&nbsp;&nbsp;"formation": "systems analysis and development",<br>
+      &nbsp;&nbsp;&nbsp;"technologies" : "angular, chatbots, node.js, n8n, LLM, NLP, artificial intelligence",<br>
+      &nbsp;&nbsp;&nbsp;"city" : "Salvador, Bahia"<br>
+      &nbsp;&nbsp;&nbsp;"available" : "true"<br>
     }`,
 
     "experience" : `<tr>
@@ -169,10 +166,10 @@ var data = {
 
   "glassmorphismOn" : `<p class="notfound result glassmorphismOnresult">You have just activated the glassmorphism design to deactivate it use the <code>glassmophism</code> command.`,
 
-  "notfound" : `<span class="notfoundlanguage"><br><br>Type the command <code>help</code> to display the list of available commands.</p></span>`,
+  "notfound" : `<span class="notfoundlanguage"><br><br>Digite o comando <code>help</code> para mostrar a lista de comandos disponíveis.</p></span>`,
 
-  "notfoundmenu" : `<span class="notfoundmenu"><br><br>Type the command <code>themes</code> to display the list of available themes.</p><br>
-  <p class="result">/!\\ to return to the main menu please use the command <code>exit</code></p></span>`,
+  "notfoundmenu" : `<span class="notfoundmenu"><br><br>Digite o comando <code>themes</code> para mostrar a lista de comandos disponíveis.</p><br>
+  <p class="result">/!\\ para retornar ao menu principal digite <code>exit</code></p></span>`,
 
   "website" : `<p class="result websiteresult">You will be redirected to the project website.</p>`,
 
@@ -225,9 +222,9 @@ var data = {
       <li><code>secrets</code>: Enable secret themes</li>
       <li>/!\\ These commands are not part of the easter egg to find. Good luck, you're almost there!</li>`,
 
-  "congratulation" : `Congratulations you have found the <code>.secret</code> folder.`,
+  "congratulation" : `Parabéns! Você encontrou a pasta <code>.secret</code>.`,
 
-  "bodymail" : `mailto:reygner0224@gmail.com?subject=Your portfolio is amazing, are you open to opportunities?&body=Guillaume REYGNER > Hello to you who found my easter egg, I am open to opportunities professionals so do not hesitate to contact me by sending me this email with your proposal. I will contact you to arrange a phone interview. Thank you for your time !`
+  "bodymail" : `mailto:vmadevops@gmail.com?subject=Your portfolio is amazing, are you open to opportunities?&body=Guillaume REYGNER > Hello to you who found my easter egg, I am open to opportunities professionals so do not hesitate to contact me by sending me this email with your proposal. I will contact you to arrange a phone interview. Thank you for your time !`
 
   },
 

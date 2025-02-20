@@ -22,8 +22,8 @@ const getCv = () =>{
   terminal.insertAdjacentHTML("beforeend", 
         `<p class="result cvresult">${data[language].cv}</p>`);
   const a = document.createElement("a");
-  a.href = "ressources/CV -  Guillaume REYGNER.pdf";
-  a.setAttribute("download", "CV -  Guillaume REYGNER.pdf");
+  a.href = "ressources/CV -  Victor Macedo.pdf";
+  a.setAttribute("download", "CV -  Victor Macedo.pdf");
   a.setAttribute("target", "blank");
   a.click();
 }
@@ -32,7 +32,7 @@ const getLinkedin = () =>{
   terminal.insertAdjacentHTML("beforeend", 
         `<p class="result redirectresultLinkedin">${data[language].redirectLinkedin}</p>`);
   const a = document.createElement("a");
-  a.href = "https://www.linkedin.com/in/guillaume-reygner/";
+  a.href = "https://www.linkedin.com/in/vmdev/";
   a.setAttribute("target", "blank");
   a.click();
 }
@@ -41,7 +41,7 @@ const getGithub = () =>{
   terminal.insertAdjacentHTML("beforeend", 
         `<p class="result redirectresultGithub">${data[language].redirectGithub}</p>`);
   const a = document.createElement("a");
-  a.href = "https://github.com/guillaume-rygn";
+  a.href = "https://github.com/victormdev";
   a.setAttribute("target", "blank");
   a.click();
 }

@@ -238,7 +238,7 @@ function logKey(e){
 
       if (y === -1){
         
-        if(result === "guillaume reygner" || result === "cd guillaume reygner" || result === "cd guillaume\\ reygner/" || result === "guillaume\\ reygner/" || result === "cd"){
+        if(result === "victor macedo" || result === "cd victor macedo" || result === "cd victor\\ macedo/" || result === "victor\\ macedo/" || result === "cd"){
           y ++;
           terminal.insertAdjacentHTML("beforeend", `<br>`);
           localisation.textContent = "/portfolio";
@@ -265,7 +265,7 @@ function logKey(e){
           }
         } else{
           terminal = document.getElementById("terminal");
-          terminal.insertAdjacentHTML("beforeend", `<p class="notfound result">${result}: command not found</p>`);
+          terminal.insertAdjacentHTML("beforeend", `<p class="notfound result">${result}: comando não encontrado</p>`);
         }
       } else 
       
@@ -295,7 +295,7 @@ function logKey(e){
           getGithub();
         } else if (result === "passions"){
           hobby();
-        } else if (result === "mes-projets" || result === "my-projects"){
+        } else if (result === "projets" || result === "projects"){
           project();
         } else if (result === "mes-projets[1].website" || result === "my-projects[1].website"){
           website(result);
@@ -336,7 +336,7 @@ function logKey(e){
         }         
         else{
           terminal = document.getElementById("terminal");
-          terminal.insertAdjacentHTML("beforeend", `<p class="notfound result">${result}: command not found
+          terminal.insertAdjacentHTML("beforeend", `<p class="notfound result">${result}: comando não encontrado
          ${data[language].notfound}`);
         }
       } else {
@@ -406,19 +406,19 @@ function logKey(e){
         
         else {
           terminal = document.getElementById("terminal");
-          terminal.insertAdjacentHTML("beforeend", `<p class="notfound result">${result}: command not found
+          terminal.insertAdjacentHTML("beforeend", `<p class="notfound result">${result}: comando não encontrado
           ${data[language].notfoundmenu}`);
         }        
       }
       if (y === -1){
         terminal = document.getElementById("terminal");
-        terminal.insertAdjacentHTML("beforeend", `<p class="commande" id="answer${i}">Guillaume REYGNER:~$:</p><input type="text" autofocus class="input themeinput" id="input${i}" tabindex="-1">`);
+        terminal.insertAdjacentHTML("beforeend", `<p class="commande" id="answer${i}">Victor MACEDO:~$:</p><input type="text" autofocus class="input themeinput" id="input${i}" tabindex="-1">`);
       } else if (y === 1){
         terminal = document.getElementById("terminal");
-        terminal.insertAdjacentHTML("beforeend", `<p class="commande" id="answer${i}">Guillaume REYGNER:~/portfolio/themes$:</p><input type="text" autofocus class="input themeinput" id="input${i}" tabindex="-1">`);
+        terminal.insertAdjacentHTML("beforeend", `<p class="commande" id="answer${i}">Victor MACEDO:~/portfolio/themes$:</p><input type="text" autofocus class="input themeinput" id="input${i}" tabindex="-1">`);
       } else {
         terminal = document.getElementById("terminal");
-        terminal.insertAdjacentHTML("beforeend", `<p class="commande" id="answer${i}">Guillaume REYGNER:~/portfolio$</p><input type="text" autofocus class="input" id="input${i}" tabindex="-1">`);
+        terminal.insertAdjacentHTML("beforeend", `<p class="commande" id="answer${i}">Victor MACEDO:~/portfolio$</p><input type="text" autofocus class="input" id="input${i}" tabindex="-1">`);
       }
       document.getElementById(`input${i}`).focus();
       if (document.getElementById(`input${i}`).classList.contains("themeinput") && y === -1){
