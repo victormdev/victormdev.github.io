@@ -22,8 +22,8 @@ const getCv = () =>{
   terminal.insertAdjacentHTML("beforeend", 
         `<p class="result cvresult">${data[language].cv}</p>`);
   const a = document.createElement("a");
-  a.href = "ressources/CV -  Victor Macedo.pdf";
-  a.setAttribute("download", "CV -  Victor Macedo.pdf");
+  a.href = "resources/CV - Victor Macedo.pdf";
+  a.setAttribute("download", "CV - Victor Macedo.pdf");
   a.setAttribute("target", "blank");
   a.click();
 }
