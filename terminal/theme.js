@@ -11,7 +11,7 @@ const themes = () =>{
           <li>medallion</li>
         </ol>
       </ul><br>
-      <p class="result">Você pode escolher um tema escrevendo na ordem o nome do seu tema ou seu número. Em seguida, valide seu pedido pressionando <em>Enter</em></p><br>
+      <p class="result">Você pode escolher um tema escrevendo o nome do tema ou seu número. Em seguida, pressione a tecla <em>Enter</em></p><br>
       <p class="result">/!\\ para retornar ao menu principal use o comando <code>exit</code>.</p>
     </p>`);
   } else {
@@ -29,11 +29,10 @@ const themes = () =>{
           <li>hello kitty</li>
         </ol>
       </ul><br>
-      <p class="result">Você pode escolher um tema escrevendo na ordem o nome do seu tema ou seu número. Em seguida, valide seu pedido pressionando <em>Enter</em></p><br>
+      <p class="result">Você pode escolher um tema escrevendo o nome do tema ou seu número. Em seguida, pressione a tecla <em>Enter</em></p><br>
       <p class="result">/!\\ para retornar ao menu principal use o comando <code>exit</code>.</p>
     </p>`);
   }
-  
 };
 
 const check = () =>{

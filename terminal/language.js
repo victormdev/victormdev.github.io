@@ -21,7 +21,7 @@ var data = {
     <li><em>Você pode ver os comandos anteriores com as setas pra cima e pra baixo</em></li>`,
 
     "aboutme" : `{<br>
-      &nbsp;&nbsp;&nbsp;"name" : "Victor MACEDO",<br>
+      &nbsp;&nbsp;&nbsp;"name" : "Victor Macedo",<br>
       &nbsp;&nbsp;&nbsp;"formation": "systems analysis and development",<br>
       &nbsp;&nbsp;&nbsp;"technologies" : "angular, chatbots, node.js, n8n, LLM, NLP, artificial intelligence",<br>
       &nbsp;&nbsp;&nbsp;"city" : "Salvador, Bahia"<br>
@@ -29,61 +29,103 @@ var data = {
     }`,
 
     "experience" : `<tr>
-    <th>Date</th>
-    <th>Company</th>
-    <th>Position</th>
-    <th class="description">Description</th>
+    <th>Data</th>
+    <th>Empresa</th>
+    <th>Cargo</th>
+    <th class="description">Descrição</th>
   </tr>
   <tr>
-    <td class="center">June 2016 - June 2018</td>
-    <td>Klevery</td>
-    <td>Co-founder</td>
-    <td>Routing optimization software for professionals with high delivery or travel activity.</td>
+    <td class="center">Ago 2018 - Fev 2019</td>
+    <td>Stagliorio Engenharia</td>
+    <td>Estagiário Front End</td>
+    <td>Na Stagliorio Engenharia, desenvolvi o site da empresa utilizando HTML, CSS, JavaScript, PHP e PostgreSQL, além de desempenhar funções de suporte técnico.</td>
   </tr>
   <tr>
-    <td class="center">Sept 2017 - Sept 2018</td>
-    <td>Credit Agricole Centre-Est</td>
-    <td>Expert risk analyst</td>
-    <td>Feasibility study of files, frequent contact with project managers in the field, legal study of bilateral/arranger contracts.</td>
+    <td class="center">Fev 2019 - Ago 2019</td>
+    <td>Instituto Recôncavo de Tecnologia</td>
+    <td>Desenvolvedor Front-End</td>
+    <td>Fui responsável por desenvolver uma aplicação web embarcada em um equipamento de rádio/modem para interagir com um navegador web.</td>
   </tr>
   <tr>
-    <td class="center">Jan 2019 - Jul 2021</td>
-    <td>CIC - Lyonnaise de Banque</td>
-    <td>Professional Business Manager</td>
-    <td>Accompaniment of the entrepreneur on his personal and professional projects, financing of needs, accompaniment on the optimization of the balance sheet and projects.</td>
+    <td class="center">Set 2019 - Dez 2019</td>
+    <td>X-Testing</td>
+    <td>Analista de Sistemas</td>
+    <td>Fui encarregado de desenvolver um criador de chatbot integrado com APIs da IBM.</td>
   </tr>
   <tr>
-    <td class="center">Dec 2019 - Today</td>
-    <td>Overstats</td>
-    <td>Co-founder</td>
-    <td>Overstats is a team management tool for the game Overwatch developed by Blizzard used by over 100 teams around the world. Management of partnerships and development of the application.</td>
+    <td class="center">Fev 2020 - Mai 2020</td>
+    <td>Automind</td>
+    <td>Desenvolvedor full stack</td>
+    <td>Desenvolvimento de um portal web para auxiliar e otimizar a gestão e integridade de sistemas de medição de petróleo, produtos químicos e biocombustíveis.</td>
   </tr>
   <tr>
-    <td class="center">August 2021 - Today</td>
-    <td>Startup101</td>
-    <td>Editor</td>
-    <td>Writer for the Startup101 newsletter which explores the beginnings of today's great startups such as Facebook, Instagram, Google and many more.</td>
+    <td class="center">Jul 2020 - Jun 2021</td>
+    <td>Rede Bahia</td>
+    <td>Coordenador de Programação de TV</td>
+    <td>Responsável por coordenar as operações relacionadas à execução dos programas, elaborando mapas de programação estabelecendo horários e sequência de transmissão.</td>
+  </tr>
+  <tr>
+    <td class="center">Jan 2021 - Ago 2021</td>
+    <td>Instituto Federal da Bahia</td>
+    <td>Bolsista Acadêmico</td>
+    <td>O projeto em que trabalhei era uma rede social voltada para empreendedores e fui responsável pela criação de novas interfaces e modelagem de dados para criar APIs e integrá-las ao front-end.</td>
+  </tr>
+  <tr>
+    <td class="center">Jul 2020 - Jul 2022</td>
+    <td>Maxxmobi</td>
+    <td>Desenvolvedor Full Stack</td>
+    <td>Como freelancer trabalhei em constantes correções e implementações em um sistema de atendimento direto via WhatsApp entre empresa e cliente.</td>
+  </tr>
+  <tr>
+    <td class="center">Dez 2021 - Ago 2022</td>
+    <td>Banco Safra</td>
+    <td>Front-End Pleno</td>
+    <td>Responsável pela experiência dentro da SafraPay, credenciadora de cartões do Banco Safra.</td>
+  </tr>
+  <tr>
+    <td class="center">Jun 2021 - Out 2022</td>
+    <td>Blip</td>
+    <td>Chatbot</td>
+    <td>Meu foco era criar experiências de conversação para usuários usando ferramentas como inteligência artificial, aprendizado de máquina e processamento de linguagem natural.</td>
+  </tr>
+  <tr>
+    <td class="center">Out 2022 - Abr 2023</td>
+    <td>Capgemini</td>
+    <td>Consultor Sênior</td>
+    <td>Atuei no desenvolvimento e manutenção de sites e aplicativos para dois grandes bancos brasileiros, envolvendo big data e desenvolvimento mobile.</td>
+  </tr>
+  <tr>
+    <td class="center">Jun 2023 - Out 2023</td>
+    <td>Localiza&Co</td>
+    <td>Engenheiro de Software Sênior</td>
+    <td>Desenvolvimento de soluções conversacionais com o objetivo de melhorar o atendimento ao cliente, como reservas de carros e compras de usados.</td>
+  </tr>
+  <tr>
+    <td class="center">Mar 2024 - Ago 2024</td>
+    <td>OSBR</td>
+    <td>Chatbot Developer</td>
+    <td>Fui o único responsável por manter o primeiro e único chatbot de um dos nossos clientes, que é uma das maiores empresas de energias renováveis do Brasil.</td>
   </tr>`,
 
   "cv" : `The resume upload will begin.`,
 
-  "redirectLinkedin" : `You will be redirected to Linkedin.`,
+  "redirectLinkedin" : `Você será redirecionado(a) para o Linkedin.`,
 
-  "redirectGithub" : `You will be redirected to Github.`,
+  "redirectGithub" : `Você será redirecionado(a) para o Github.`,
 
   "hobby" : `{<br>
     &nbsp;&nbsp;&nbsp;"Sport": "Volleyball, Cycling",<br>
     &nbsp;&nbsp;&nbsp;"Programming": "JS, Rails",<br>
-    &nbsp;&nbsp;&nbsp;"Other" : "Entrepreneurship, Photography, Reading autobiography, Design, Marketing"<br>
+    &nbsp;&nbsp;&nbsp;"Other" : "Empreendedorismo, Design e Marketing"<br>
   }`,
 
   "project" : `<table class="result">
   <tr>
     <th>index</th>
-    <th>Name</th>
+    <th>Nome</th>
     <th>Tech</th>
-    <th class="description">Description</th>
-    <th>As a team?</th>
+    <th class="description">Descrição</th>
+    <th>Tinha time?</th>
     <th>Github</th>
   </tr>
   <tr>
