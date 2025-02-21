@@ -15,7 +15,6 @@ var data = {
     <li><code>get github</code>: Link para o meu Github</li>
     <li><code>help</code>: Mostrar a lista de comandos</li>
     <li><code>passions</code>: Mostrar a lista dos meus hobbies</li>
-    <li><code>my-projects</code>: Ver meus projetos pessoais</li>
     <li><code>themes</code>: Mudar o tema do terminal</li>
     <li><em>Você pode usar a tecla TAB para completar o comando</em></li>
     <li><em>Você pode ver os comandos anteriores com as setas pra cima e pra baixo</em></li>`,
@@ -107,15 +106,15 @@ var data = {
     <td>Fui o único responsável por manter o primeiro e único chatbot de um dos nossos clientes, que é uma das maiores empresas de energias renováveis do Brasil.</td>
   </tr>`,
 
-  "cv" : `The resume upload will begin.`,
+  "cv" : `O upload do currículo começará.`,
 
   "redirectLinkedin" : `Você será redirecionado(a) para o Linkedin.`,
 
   "redirectGithub" : `Você será redirecionado(a) para o Github.`,
 
   "hobby" : `{<br>
-    &nbsp;&nbsp;&nbsp;"Sport": "Volleyball, Cycling",<br>
-    &nbsp;&nbsp;&nbsp;"Programming": "JS, Rails",<br>
+    &nbsp;&nbsp;&nbsp;"Sport": "Musculação e boxe",<br>
+    &nbsp;&nbsp;&nbsp;"Programming": "IA, Automações",<br>
     &nbsp;&nbsp;&nbsp;"Other" : "Empreendedorismo, Design e Marketing"<br>
   }`,
 
