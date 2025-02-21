@@ -17,7 +17,7 @@ let localisation = document.getElementById("localisation");
 let bannerTitle = document.getElementById("banner-title"); 
 let banner = document.getElementById("banner");
 let historic = [];
-let theme = 1;
+let theme = 3;
 let numberTheme;
 let nameTheme = "dracula";
 let secret = 0;
