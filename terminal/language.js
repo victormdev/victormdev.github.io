@@ -104,6 +104,12 @@ var data = {
     <td>OSBR</td>
     <td>Chatbot Developer</td>
     <td>Fui o único responsável por manter o primeiro e único chatbot de um dos nossos clientes, que é uma das maiores empresas de energias renováveis do Brasil.</td>
+  </tr>
+  <tr>
+    <td class="center">Set 2024 - Atualmente</td>
+    <td>Compass UOL</td>
+    <td>AI Developer</td>
+    <td>Atuo na squad de AI & ML, desenvolvendo sistemas com ML, RAG e deep learning.</td>
   </tr>`,
 
   "cv" : `O upload do currículo começará.`,
