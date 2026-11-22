@@ -121,8 +121,10 @@ def hero(c):
 
 
 def case_card(cs, labels):
-    frame = ""
-    if cs.get("soon"):
+    if cs.get("live"):
+        host = cs.get("url", "").split("//")[-1].rstrip("/")
+        frame = f"""<div class="frame frame--soon"><span class="status mono"><span class="status__dot"></span>{e(labels['live'])}</span><span class="frame__title">{e(cs['name'])}</span><span class="mono dim">{e(host)}</span></div>"""
+    elif cs.get("soon"):
         frame = f"""<div class="frame frame--soon"><span class="mono signal">{e(labels['soon'])}</span><span class="frame__title">{e(cs['name'])}</span><span class="mono dim">{e(labels['inProduction'])} · {e(cs['period'])}</span></div>"""
     else:
         bubbles = "".join(f'<span class="bubble bubble--{e(who)}">{e(text)}</span>' for who, text in cs.get("chat", []))
@@ -134,7 +136,7 @@ def case_card(cs, labels):
     tags = f'<ul class="tags" aria-label="Stack">{tags}</ul>' if tags else ""
     link = f'<a class="case__link" href="{e(cs["url"])}" target="_blank" rel="noopener">→</a>' if cs.get("url") else ""
     return f"""<article class="case reveal" id="case-{e(cs['id'])}">
-  <div class="window"><div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">{e(cs['id'])}.bot</span></div>{frame}</div>
+  <div class="window"><div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">{e(cs['url'].split('//')[-1].rstrip('/') if cs.get('live') else cs['id'] + '.bot')}</span></div>{frame}</div>
   <p class="meta mono"><span>{e(cs['client'])}</span><span>{e(cs['period'])}</span></p>
   <h3 class="case__name">{e(cs['name'])}{link}</h3>
   {desc}{result}{tags}
