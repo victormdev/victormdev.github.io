@@ -29,7 +29,6 @@
 <meta name="twitter:image" content="https://victormdev.github.io/assets/img/og.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css?v=20261122">
 <script>document.documentElement.classList.replace('no-js','js')</script>
@@ -40,10 +39,10 @@
 <div class="progress" aria-hidden="true"><span id="progress"></span></div>
 <header class="bar bar--top" id="bar">
   <a class="mark" href="/" aria-label="Victor Macedo">VM<span>.</span></a>
-  <span class="bar__scene mono" id="scene" aria-hidden="true">Cena 01 · Cold open</span>
+  <span class="bar__scene mono" id="scene" aria-hidden="true">~/inicio</span>
   <nav class="bar__nav" aria-label="Seções">
     <a href="#cases" data-nav="cases">Cases</a>
-    <a href="#elenco" data-nav="elenco">Elenco</a>
+    <a href="#stack" data-nav="stack">Stack</a>
     <a href="#contato" data-nav="contato" class="accent">Contato</a>
   </nav>
   <div class="bar__tools">
@@ -52,52 +51,52 @@
   </div>
 </header>
 <main id="conteudo">
-<section class="hero" id="top" data-scene="Cena 01 · Cold open">
+<section class="hero" id="top" data-scene="~/inicio">
   <div class="hero__light" id="light" aria-hidden="true"></div>
-  <svg class="grain" aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
+  <div class="hero__grid" aria-hidden="true"></div>
   <div class="wrap hero__body">
-    <p class="kicker mono"><span class="rec" aria-hidden="true"></span>Filmado em Salvador, BA</p>
-    <h1 class="hero__title"><span class="line">Victor</span><span class="line"><em>Macedo.</em></span></h1>
-    <p class="hero__logline">Eu dirijo conversas entre empresas e pessoas. Há nove anos construo chatbots que atendem clientes de verdade — em bancos, varejo e locadoras. Hoje, com IA generativa no centro.</p>
-    <p class="billing"><span class="mono">Estrelando</span> <span class="billing__names">Compass · Take Blip · XP Inc · Localiza · Capgemini · Banco do Brasil · Banco Safra · TV Bahia</span></p>
+    <p class="kicker"><span class="kicker__prompt">~/salvador-ba $</span> <span id="typed" data-phrases="[&quot;construindo chatbots em produção&quot;, &quot;integrando LLMs com RAG&quot;, &quot;automatizando atendimento no WhatsApp&quot;, &quot;orquestrando agentes de IA&quot;]">construindo chatbots em produção</span><span class="caret" aria-hidden="true"></span></p>
+    <h1 class="hero__title"><span class="line">Victor</span><span class="line accent">Macedo.</span></h1>
+    <p class="hero__logline">Eu projeto conversas entre empresas e pessoas. Há nove anos construo chatbots que atendem clientes de verdade — em bancos, varejo e locadoras. Hoje, com IA generativa no centro.</p>
+    <p class="billing"><span class="mono">Experiência em</span> <span class="billing__names">Compass · Take Blip · XP Inc · Localiza · Capgemini · Banco do Brasil · Banco Safra · TV Bahia</span></p>
   </div>
   <div class="bar bar--hero mono" aria-hidden="true">
-    <span>▼ Role para começar</span><span>Ato I de II</span><span><span id="timecode">00:00:00:00</span> · <span id="clock">--:--</span> BRT</span>
+    <span>↓ Role para ver os cases</span><span class="status"><span class="status__dot"></span>Disponível para projetos</span><span>Salvador · <span id="clock">--:--</span> BRT</span>
   </div>
 </section>
-<section class="section wrap" id="cases" data-scene="Ato I · Cases" aria-labelledby="cases-title">
+<section class="section wrap" id="cases" data-scene="~/cases" aria-labelledby="cases-title">
   <div class="section__head reveal">
-    <div><p class="act mono">Ato I</p><h2 id="cases-title" class="display">Cases em <em>destaque</em></h2></div>
+    <div><p class="act mono">01 · Cases</p><h2 id="cases-title" class="display">Cases em <span class="accent">destaque</span></h2></div>
     <p class="lede">Três histórias do meu trabalho com IA conversacional: o contexto, o que eu construí e o que mudou depois.</p>
   </div>
   <div class="cases"><article class="case reveal" id="case-renner">
-  <div class="letterbox"><div class="frame frame--renner"><div class="frame__chat"><span class="bubble bubble--user">Por que minha fatura veio mais alta?</span><span class="bubble bubble--bot">Achei duas compras parceladas novas neste mês. Quer ver o detalhe de cada uma?</span></div></div></div>
+  <div class="window"><div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">renner.bot</span></div><div class="frame frame--renner"><div class="frame__chat"><span class="bubble bubble--user">Por que minha fatura veio mais alta?</span><span class="bubble bubble--bot">Achei duas compras parceladas novas neste mês. Quer ver o detalhe de cada uma?</span></div></div></div>
   <p class="meta mono"><span>Renner · via Compass</span><span>2024 →</span></p>
   <h3 class="case__name">Cartões &amp; Faturas</h3>
   <p class="case__desc">Chatbots de atendimento para dúvidas de cartão e fatura da Renner, construídos no squad de AI &amp; ML da Compass com machine learning, RAG e deep learning.</p><ul class="tags" aria-label="Stack"><li>LLM</li><li>RAG</li><li>NLP</li></ul>
 </article>
 <article class="case reveal" id="case-sicredi">
-  <div class="letterbox"><div class="frame frame--sicredi"><div class="frame__chat"><span class="bubble bubble--user">Qual o procedimento para esse caso?</span><span class="bubble bubble--bot">Encontrei em dois documentos internos. Resumo abaixo, com as fontes.</span><span class="frame__source mono">Fonte · doc 4.2</span></div></div></div>
+  <div class="window"><div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">sicredi.bot</span></div><div class="frame frame--sicredi"><div class="frame__chat"><span class="bubble bubble--user">Qual o procedimento para esse caso?</span><span class="bubble bubble--bot">Encontrei em dois documentos internos. Resumo abaixo, com as fontes.</span><span class="frame__source mono">Fonte · doc 4.2</span></div></div></div>
   <p class="meta mono"><span>Sicredi · via Compass</span><span>2024 →</span></p>
   <h3 class="case__name">Portal RAG</h3>
   <p class="case__desc">Portal em que a IA responde a partir dos documentos da cooperativa — recuperação de contexto antes da geração, e não a memória do modelo.</p><ul class="tags" aria-label="Stack"><li>RAG</li><li>LLM</li><li>Busca semântica</li></ul>
 </article>
 <article class="case reveal" id="case-larmobi">
-  <div class="letterbox"><div class="frame frame--soon"><span class="mono amber">Em breve</span><span class="frame__title">Larmobi</span><span class="mono dim">Em produção · 2026</span></div></div>
+  <div class="window"><div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">larmobi.bot</span></div><div class="frame frame--soon"><span class="mono signal">Em breve</span><span class="frame__title">Larmobi</span><span class="mono dim">Em desenvolvimento · 2026</span></div></div>
   <p class="meta mono"><span>Projeto próprio</span><span>2026</span></p>
   <h3 class="case__name">Larmobi</h3>
   
 </article></div>
   <div class="catalog"><h3 class="label mono">Também no catálogo</h3><ul><li class="row reveal"><span class="row__year mono">2024 →</span><span class="row__name">Prevenção a fraudes</span><span class="row__desc">Robôs de prevenção a fraudes com IBM Orchestrate e RPA Studio, pela Compass.</span></li><li class="row reveal"><span class="row__year mono">2023</span><span class="row__name">XP Inc &amp; Rico</span><span class="row__desc">Estratégia e implementação de chatbots para clientes B2B e B2C.</span></li><li class="row reveal"><span class="row__year mono">2023</span><span class="row__name">Localiza</span><span class="row__desc">Atendimento conversacional no Blip para reservas de carros e compra de seminovos.</span></li><li class="row reveal"><span class="row__year mono">2022 – 23</span><span class="row__name">Banco do Brasil</span><span class="row__desc">Desenvolvimento da análise de crédito, pela Capgemini.</span></li><li class="row reveal"><span class="row__year mono">2021 – 22</span><span class="row__name">SafraPay</span><span class="row__desc">Front-end das páginas da credenciadora de cartões do Banco Safra, pela Act Digital.</span></li><li class="row reveal"><span class="row__year mono">2021 →</span><span class="row__name">Nugo</span><span class="row__desc">Minha empresa de chatbots e automações com IA. <a href="https://www.instagram.com/nugo.digital/" target="_blank" rel="noopener">@nugo.digital ↗</a></span></li><li class="row reveal"><span class="row__year mono">Open source</span><span class="row__name">Agente RAG com Langflow</span><span class="row__desc">Agente de suporte ao cliente com busca RAG, em Python. <a href="https://github.com/victormdev/rag-agent-python-langflow" target="_blank" rel="noopener">GitHub ↗</a></span></li><li class="row reveal"><span class="row__year mono">Open source</span><span class="row__name">DeepSeek no WhatsApp</span><span class="row__desc">Integração de um modelo DeepSeek com o WhatsApp, em JavaScript. <a href="https://github.com/victormdev/deepseek-whatsapp" target="_blank" rel="noopener">GitHub ↗</a></span></li></ul></div>
 </section>
-<section class="section wrap" id="elenco" data-scene="Ato II · Elenco" aria-labelledby="cast-title">
-  <div class="section__head reveal"><div><p class="act mono">Ato II</p><h2 id="cast-title" class="display">O <em>elenco</em></h2></div><p class="lede">Cada ferramenta no papel que ela tem de verdade no meu dia a dia.</p></div>
-  <div class="tier tier--1 reveal"><h3 class="label mono">Elenco principal · uso diário</h3><ul><li>RAG</li><li>LLM</li><li>NLP</li><li>Python</li><li>Node.js</li><li>TypeScript</li><li>Angular</li><li>JavaScript</li></ul></div><div class="tier tier--2 reveal"><h3 class="label mono">Elenco de apoio · uso frequente</h3><ul><li>IBM Watson</li><li>Blip</li><li>Node-RED</li><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Vue.js</li><li>Flutter</li><li>Firebase</li><li>HTML</li><li>CSS</li></ul></div><div class="tier tier--3 reveal"><h3 class="label mono">Participação especial · já em produção</h3><ul><li>MongoDB</li><li>MySQL</li><li>IBM Cloud</li><li>jQuery</li><li>Thymeleaf</li></ul></div>
+<section class="section wrap" id="stack" data-scene="~/stack" aria-labelledby="cast-title">
+  <div class="section__head reveal"><div><p class="act mono">02 · Stack</p><h2 id="cast-title" class="display">Minha <span class="accent">stack</span></h2></div><p class="lede">O que eu uso no dia a dia, separado por frequência.</p></div>
+  <div class="tier tier--1 reveal"><h3 class="label mono">Uso diário</h3><ul><li>RAG</li><li>LLM</li><li>NLP</li><li>Python</li><li>Node.js</li><li>TypeScript</li><li>Angular</li><li>JavaScript</li></ul></div><div class="tier tier--2 reveal"><h3 class="label mono">Uso frequente</h3><ul><li>IBM Watson</li><li>Blip</li><li>Node-RED</li><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Vue.js</li><li>Flutter</li><li>Firebase</li><li>HTML</li><li>CSS</li></ul></div><div class="tier tier--3 reveal"><h3 class="label mono">Já usei em produção</h3><ul><li>MongoDB</li><li>MySQL</li><li>IBM Cloud</li><li>jQuery</li><li>Thymeleaf</li></ul></div>
 </section>
-<section class="contact" id="contato" data-scene="Cena final" aria-labelledby="contact-title">
+<section class="contact" id="contato" data-scene="~/contato" aria-labelledby="contact-title">
   <div class="contact__inner reveal">
-    <p class="act mono">Cena final</p>
-    <h2 id="contact-title" class="display display--xl">A próxima cena<br><em>é sua.</em></h2>
+    <p class="act mono">03 · Contato</p>
+    <h2 id="contact-title" class="display display--xl">Tem um projeto<br><span class="accent">em mente?</span></h2>
     <p class="lede">Projetos de chatbot e IA, consultoria pela Nugo ou mentoria para quem quer entrar e crescer em tecnologia.</p>
     <form class="message" id="message" data-subject="Contato pelo portfólio" data-greeting="Olá, Victor! Vim pelo seu portfólio.">
       <label class="label mono" for="message-text">Sua mensagem</label>
@@ -119,7 +118,7 @@
 </main>
 <footer class="bar bar--bottom mono">
   <span>© 2026 Victor Macedo</span>
-  <span>Fim · feito com café e commits pequenos</span>
+  <span>Feito com café e commits pequenos</span>
   <span class="bar__links"><a href="/terminal/">Versão terminal</a> · <a href="/en/" hreflang="en" data-lang-switch="en">EN</a></span>
 </footer>
 <dialog class="palette" id="palette" aria-label="Busca">
@@ -127,7 +126,7 @@
   <ul class="palette__list" id="palette-list" role="listbox"></ul>
 </dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script type="application/json" id="vm-data">{"lang": "pt-BR", "path": "/", "otherPath": "/en/", "email": "vmadevops@gmail.com", "whatsapp": "5571992068839", "palette": {"title": "Busca", "placeholder": "buscar seções, cases, ações…", "empty": "Nada encontrado.", "groups": {"sec": "seção", "case": "case", "act": "ação"}, "actions": {"copy": "Copiar e-mail", "lang": "Read in English", "terminal": "Abrir versão terminal", "top": "Voltar ao topo", "whatsapp": "Abrir WhatsApp"}, "close": "Fechar"}, "contact": {"copied": "E-mail copiado"}, "sections": [{"id": "top", "label": "Início"}, {"id": "cases", "label": "Cases"}, {"id": "elenco", "label": "Elenco"}, {"id": "contato", "label": "Contato"}], "cases": [{"id": "renner", "label": "Cartões & Faturas · Renner · via Compass"}, {"id": "sicredi", "label": "Portal RAG · Sicredi · via Compass"}, {"id": "larmobi", "label": "Larmobi · Projeto próprio"}]}</script>
+<script type="application/json" id="vm-data">{"lang": "pt-BR", "path": "/", "otherPath": "/en/", "email": "vmadevops@gmail.com", "whatsapp": "5571992068839", "palette": {"title": "Busca", "placeholder": "buscar seções, cases, ações…", "empty": "Nada encontrado.", "groups": {"sec": "seção", "case": "case", "act": "ação"}, "actions": {"copy": "Copiar e-mail", "lang": "Read in English", "terminal": "Abrir versão terminal", "top": "Voltar ao topo", "whatsapp": "Abrir WhatsApp"}, "close": "Fechar"}, "contact": {"copied": "E-mail copiado"}, "sections": [{"id": "top", "label": "Início"}, {"id": "cases", "label": "Cases"}, {"id": "stack", "label": "Stack"}, {"id": "contato", "label": "Contato"}], "cases": [{"id": "renner", "label": "Cartões & Faturas · Renner · via Compass"}, {"id": "sicredi", "label": "Portal RAG · Sicredi · via Compass"}, {"id": "larmobi", "label": "Larmobi · Projeto próprio"}]}</script>
 <script src="/assets/js/site.js?v=20261122" defer></script>
 </body>
 </html>

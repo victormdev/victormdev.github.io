@@ -58,7 +58,6 @@ def head(c, other, *, title=None, description=None, canonical=None, noindex=Fals
 <meta name="twitter:image" content="{img}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css?v={VERSION}">
 <script>document.documentElement.classList.replace('no-js','js')</script>
@@ -94,7 +93,7 @@ def header(c, other):
   <span class="bar__scene mono" id="scene" aria-hidden="true">{e(c['hero']['scene'])}</span>
   <nav class="bar__nav" aria-label="{e('Sections' if c['lang'] == 'en' else 'Seções')}">
     <a href="#cases" data-nav="cases">{e(n['cases'])}</a>
-    <a href="#elenco" data-nav="elenco">{e(n['cast'])}</a>
+    <a href="#stack" data-nav="stack">{e(n['cast'])}</a>
     <a href="#contato" data-nav="contato" class="accent">{e(n['contact'])}</a>
   </nav>
   <div class="bar__tools">
@@ -108,15 +107,15 @@ def hero(c):
     h = c["hero"]
     return f"""<section class="hero" id="top" data-scene="{e(h['scene'])}">
   <div class="hero__light" id="light" aria-hidden="true"></div>
-  <svg class="grain" aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
+  <div class="hero__grid" aria-hidden="true"></div>
   <div class="wrap hero__body">
-    <p class="kicker mono"><span class="rec" aria-hidden="true"></span>{e(h['kicker'])}</p>
-    <h1 class="hero__title"><span class="line">{e(h['first'])}</span><span class="line"><em>{e(h['last'])}</em></span></h1>
+    <p class="kicker"><span class="kicker__prompt">{e(h['prompt'])}</span> <span id="typed" data-phrases="{e(json.dumps(h['typed'], ensure_ascii=False))}">{e(h['typed'][0])}</span><span class="caret" aria-hidden="true"></span></p>
+    <h1 class="hero__title"><span class="line">{e(h['first'])}</span><span class="line accent">{e(h['last'])}</span></h1>
     <p class="hero__logline">{e(h['logline'])}</p>
     <p class="billing"><span class="mono">{e(h['starring'])}</span> <span class="billing__names">{e(h['starringList'])}</span></p>
   </div>
   <div class="bar bar--hero mono" aria-hidden="true">
-    <span>▼ {e(h['scroll'])}</span><span>{e(h['act'])}</span><span><span id="timecode">00:00:00:00</span> · <span id="clock">--:--</span> BRT</span>
+    <span>↓ {e(h['scroll'])}</span><span class="status"><span class="status__dot"></span>{e(h['status'])}</span><span>Salvador · <span id="clock">--:--</span> BRT</span>
   </div>
 </section>"""
 
@@ -124,7 +123,7 @@ def hero(c):
 def case_card(cs, labels):
     frame = ""
     if cs.get("soon"):
-        frame = f"""<div class="frame frame--soon"><span class="mono amber">{e(labels['soon'])}</span><span class="frame__title">{e(cs['name'])}</span><span class="mono dim">{e(labels['inProduction'])} · {e(cs['period'])}</span></div>"""
+        frame = f"""<div class="frame frame--soon"><span class="mono signal">{e(labels['soon'])}</span><span class="frame__title">{e(cs['name'])}</span><span class="mono dim">{e(labels['inProduction'])} · {e(cs['period'])}</span></div>"""
     else:
         bubbles = "".join(f'<span class="bubble bubble--{e(who)}">{e(text)}</span>' for who, text in cs.get("chat", []))
         src = f'<span class="frame__source mono">{e(cs["source"])}</span>' if cs.get("source") else ""
@@ -135,7 +134,7 @@ def case_card(cs, labels):
     tags = f'<ul class="tags" aria-label="Stack">{tags}</ul>' if tags else ""
     link = f'<a class="case__link" href="{e(cs["url"])}" target="_blank" rel="noopener">→</a>' if cs.get("url") else ""
     return f"""<article class="case reveal" id="case-{e(cs['id'])}">
-  <div class="letterbox">{frame}</div>
+  <div class="window"><div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">{e(cs['id'])}.bot</span></div>{frame}</div>
   <p class="meta mono"><span>{e(cs['client'])}</span><span>{e(cs['period'])}</span></p>
   <h3 class="case__name">{e(cs['name'])}{link}</h3>
   {desc}{result}{tags}
@@ -149,9 +148,9 @@ def cases(c):
     for r in k["catalog"]:
         link = f' <a href="{e(r["url"])}" target="_blank" rel="noopener">{e(r["linkLabel"])} ↗</a>' if r.get("url") else ""
         rows.append(f'<li class="row reveal"><span class="row__year mono">{e(r["year"])}</span><span class="row__name">{e(r["name"])}</span><span class="row__desc">{e(r["desc"])}{link}</span></li>')
-    return f"""<section class="section wrap" id="cases" data-scene="{e(k['act'])} · {e(c['nav']['cases'])}" aria-labelledby="cases-title">
+    return f"""<section class="section wrap" id="cases" data-scene="~/cases" aria-labelledby="cases-title">
   <div class="section__head reveal">
-    <div><p class="act mono">{e(k['act'])}</p><h2 id="cases-title" class="display">{e(k['titleA'])} <em>{e(k['titleEm'])}</em></h2></div>
+    <div><p class="act mono">{e(k['act'])}</p><h2 id="cases-title" class="display">{e(k['titleA'])} <span class="accent">{e(k['titleEm'])}</span></h2></div>
     <p class="lede">{e(k['intro'])}</p>
   </div>
   <div class="cases">{cards}</div>
@@ -165,8 +164,8 @@ def cast(c):
     for i, t in enumerate(k["tiers"]):
         items = "".join(f"<li>{e(x)}</li>" for x in t["items"])
         tiers.append(f'<div class="tier tier--{i + 1} reveal"><h3 class="label mono">{e(t["label"])}</h3><ul>{items}</ul></div>')
-    return f"""<section class="section wrap" id="elenco" data-scene="{e(k['act'])} · {e(c['nav']['cast'])}" aria-labelledby="cast-title">
-  <div class="section__head reveal"><div><p class="act mono">{e(k['act'])}</p><h2 id="cast-title" class="display">{e(k['titleA'])} <em>{e(k['titleEm'])}</em></h2></div><p class="lede">{e(k['intro'])}</p></div>
+    return f"""<section class="section wrap" id="stack" data-scene="~/stack" aria-labelledby="cast-title">
+  <div class="section__head reveal"><div><p class="act mono">{e(k['act'])}</p><h2 id="cast-title" class="display">{e(k['titleA'])} <span class="accent">{e(k['titleEm'])}</span></h2></div><p class="lede">{e(k['intro'])}</p></div>
   {''.join(tiers)}
 </section>"""
 
@@ -174,10 +173,10 @@ def cast(c):
 def contact(c):
     k = c["contact"]
     wa = f"https://wa.me/{SITE['whatsapp']}"
-    return f"""<section class="contact" id="contato" data-scene="{e(k['label'])}" aria-labelledby="contact-title">
+    return f"""<section class="contact" id="contato" data-scene="~/{'contact' if c['lang'] == 'en' else 'contato'}" aria-labelledby="contact-title">
   <div class="contact__inner reveal">
     <p class="act mono">{e(k['label'])}</p>
-    <h2 id="contact-title" class="display display--xl">{e(k['titleA'])}<br><em>{e(k['titleEm'])}</em></h2>
+    <h2 id="contact-title" class="display display--xl">{e(k['titleA'])}<br><span class="accent">{e(k['titleEm'])}</span></h2>
     <p class="lede">{e(k['body'])}</p>
     <form class="message" id="message" data-subject="{e(k['subject'])}" data-greeting="{e(k['greeting'])}">
       <label class="label mono" for="message-text">{e(k['messageLabel'])}</label>
@@ -220,7 +219,7 @@ def client_data(c):
     sections = [
         {"id": "top", "label": "Victor Macedo" if c["lang"] == "en" else "Início"},
         {"id": "cases", "label": c["nav"]["cases"]},
-        {"id": "elenco", "label": c["nav"]["cast"]},
+        {"id": "stack", "label": c["nav"]["cast"]},
         {"id": "contato", "label": c["nav"]["contact"]},
     ]
     return {
@@ -265,7 +264,7 @@ def not_found():
 <header class="bar bar--top"><a class="mark" href="/">VM<span>.</span></a><span class="mono">404 · {e(nf['title'])}</span></header>
 <main class="nf__main" id="conteudo">
   <p class="act mono">404</p>
-  <h1 class="display display--xl"><em>{e(nf['title'])}</em></h1>
+  <h1 class="display display--xl">{e(nf['title'])}</h1>
   <p class="lede">{e(nf['body'])}</p>
   <p class="lede dim" lang="en">{e(nf_en['body'])}</p>
   <div class="actions"><a class="btn btn--light" href="/">{e(nf['back'])}</a><a class="btn btn--ghost" href="/en/" lang="en">{e(nf_en['back'])}</a></div>
