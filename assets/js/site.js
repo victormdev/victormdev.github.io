@@ -66,28 +66,30 @@
     });
   } else reveals.forEach(function (el) { el.classList.add("in"); });
 
-  /* ---------- Timecode + Salvador clock ---------- */
-  var tc = $("#timecode"), clock = $("#clock"), t0 = performance.now();
-  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  /* ---------- Salvador clock ---------- */
+  var clock = $("#clock");
   function tickClock() {
     if (!clock) return;
     try { clock.textContent = new Date().toLocaleTimeString("en-GB", { timeZone: "America/Bahia", hour: "2-digit", minute: "2-digit" }); } catch (e) {}
   }
   tickClock(); setInterval(tickClock, 30000);
-  if (tc) {
-    var lastF = -1;
-    var frame = function (now) {
-      var s = (now - t0) / 1000, f = Math.floor((s % 1) * 24);
-      if (f !== lastF) {
-        lastF = f;
-        tc.textContent = pad(Math.floor(s / 3600)) + ":" + pad(Math.floor(s / 60) % 60) + ":" + pad(Math.floor(s) % 60) + ":" + pad(f);
-      }
-      if (!reduce) requestAnimationFrame(frame);
+
+  /* ---------- Hero prompt: types what I'm working on, in rotation ---------- */
+  var typed = $("#typed");
+  if (typed && !reduce) {
+    var phrases = []; try { phrases = JSON.parse(typed.dataset.phrases); } catch (e) {}
+    var pi = 0, ci = phrases.length ? phrases[0].length : 0, del = true;
+    var step = function () {
+      var wait = del ? 28 : 55;
+      if (del) { ci--; if (ci <= 0) { del = false; pi = (pi + 1) % phrases.length; wait = 350; } }
+      else { ci++; if (ci >= phrases[pi].length) { del = true; wait = 2600; } }
+      typed.textContent = phrases[pi].slice(0, Math.max(0, ci));
+      setTimeout(step, wait);
     };
-    if (reduce) setInterval(function () { frame(performance.now()); }, 1000); else requestAnimationFrame(frame);
+    if (phrases.length > 1) setTimeout(step, 2800);
   }
 
-  /* ---------- Projector light follows the pointer ---------- */
+  /* ---------- Glow follows the pointer ---------- */
   var light = $("#light"), hero = $(".hero");
   if (light && hero && !reduce && window.matchMedia("(pointer: fine)").matches) {
     hero.addEventListener("pointermove", function (e) {
