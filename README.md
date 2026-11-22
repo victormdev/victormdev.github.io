@@ -18,7 +18,6 @@ Campos vazios (`""`) ficam escondidos no site. Os que valem a pena preencher:
 | --- | --- |
 | `cases.items[].result` (pt e en) | Linha "Resultado" de cada case — use um número real |
 | `cases.items[larmobi].desc` e `.url` | Card da Larmobi (hoje mostra só "Em breve") |
-| `site.certification.pt` / `.en` | Nos Créditos, abaixo da formação |
 
 ## Imagens de compartilhamento
 
