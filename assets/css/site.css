@@ -140,24 +140,6 @@ textarea::placeholder{color:var(--dim)}
 .row__desc{flex:2 1 340px;font-size:15px;line-height:1.55;color:var(--muted)}
 .row__desc a{white-space:nowrap}
 
-/* Backstage */
-.backstage{background:#000;padding:clamp(100px,12vw,160px) var(--pad)}
-.backstage__inner{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px}
-.backstage__quote{font:400 clamp(36px,4.6vw,66px)/1.08 var(--serif);letter-spacing:-.01em}
-
-/* Credits */
-.credits{padding:clamp(96px,12vw,150px) var(--pad);background:linear-gradient(var(--bg),#090A11)}
-.credits__inner{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:64px}
-.credits__list{display:flex;flex-direction:column;gap:30px}
-.credit{display:grid;grid-template-columns:minmax(0,1fr) 120px minmax(0,1fr);gap:22px;align-items:baseline}
-.credit__role{text-align:right;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.credit__year{text-align:center;color:var(--dim);font-size:11px;letter-spacing:.06em}
-.credit__org{display:flex;flex-direction:column;gap:6px}
-.credit__name{font:400 26px/1.1 var(--serif);color:var(--text)}
-.credit__desc{font-size:14px;line-height:1.5;color:var(--dim);max-width:40ch}
-.education ul{display:flex;flex-direction:column;gap:12px;align-items:center}
-.education li{display:flex;flex-direction:column;gap:4px;align-items:center}
-
 /* Cast */
 .tier{display:flex;flex-direction:column;gap:16px;padding-bottom:40px;border-bottom:1px solid var(--line)}
 .tier:last-child{border-bottom:0}
@@ -227,10 +209,6 @@ textarea::placeholder{color:var(--dim)}
 @media (max-width:900px){
   .bar__scene{display:none}
   .bar__nav{display:none}
-  .credit{grid-template-columns:1fr;gap:4px;text-align:center}
-  .credit__role,.credit__year{text-align:center}
-  .credit__org{align-items:center}
-  .credit__desc{text-align:center}
   .bar--hero span:nth-child(2){display:none}
 }
 @media (max-width:560px){

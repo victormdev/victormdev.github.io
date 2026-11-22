@@ -94,8 +94,6 @@ def header(c, other):
   <span class="bar__scene mono" id="scene" aria-hidden="true">{e(c['hero']['scene'])}</span>
   <nav class="bar__nav" aria-label="{e('Sections' if c['lang'] == 'en' else 'Seções')}">
     <a href="#cases" data-nav="cases">{e(n['cases'])}</a>
-    <a href="#bastidores" data-nav="bastidores">{e(n['backstage'])}</a>
-    <a href="#creditos" data-nav="creditos">{e(n['credits'])}</a>
     <a href="#elenco" data-nav="elenco">{e(n['cast'])}</a>
     <a href="#contato" data-nav="contato" class="accent">{e(n['contact'])}</a>
   </nav>
@@ -161,35 +159,6 @@ def cases(c):
 </section>"""
 
 
-def backstage(c):
-    b = c["backstage"]
-    return f"""<section class="backstage" id="bastidores" data-scene="{e(b['label'])}" aria-label="{e(c['nav']['backstage'])}">
-  <div class="backstage__inner reveal">
-    <p class="act mono">{e(b['label'])}</p>
-    <blockquote class="backstage__quote">{e(b['quoteA'])} <em>{e(b['quoteEm'])}</em>{e(b['quoteB'])}</blockquote>
-    <p class="lede">{e(b['body'])}</p>
-  </div>
-</section>"""
-
-
-def credits(c):
-    k = c["credits"]
-    items = []
-    for it in k["items"]:
-        desc = f'<span class="credit__desc">{e(it["desc"])}</span>' if it.get("desc") else ""
-        items.append(f'<li class="credit reveal"><span class="credit__role">{e(it["role"])}</span><span class="credit__year mono">{e(it["period"])}</span><span class="credit__org"><span class="credit__name">{e(it["org"])}</span>{desc}</span></li>')
-    edu = "".join(f'<li><span class="credit__name">{e(x["course"])}</span><span class="mono dim">{e(x["org"])} · {e(x["period"])}</span></li>' for x in k["education"])
-    cert = SITE["certification"].get(c["lang"][:2], "")
-    cert_html = f'<p class="label mono">{e(k["certificationLabel"])}</p><p class="credit__name">{e(cert)}</p>' if cert else ""
-    return f"""<section class="credits" id="creditos" data-scene="{e(k['act'])} · {e(k['title'])}" aria-labelledby="credits-title">
-  <div class="credits__inner">
-    <div class="center reveal"><p class="act mono">{e(k['act'])}</p><h2 id="credits-title" class="display">{e(k['title'])}</h2><p class="lede">{e(k['intro'])}</p></div>
-    <ol class="credits__list">{''.join(items)}</ol>
-    <div class="center education reveal"><p class="label mono">{e(k['educationLabel'])}</p><ul>{edu}</ul>{cert_html}</div>
-  </div>
-</section>"""
-
-
 def cast(c):
     k = c["cast"]
     tiers = []
@@ -251,8 +220,6 @@ def client_data(c):
     sections = [
         {"id": "top", "label": "Victor Macedo" if c["lang"] == "en" else "Início"},
         {"id": "cases", "label": c["nav"]["cases"]},
-        {"id": "bastidores", "label": c["nav"]["backstage"]},
-        {"id": "creditos", "label": c["nav"]["credits"]},
         {"id": "elenco", "label": c["nav"]["cast"]},
         {"id": "contato", "label": c["nav"]["contact"]},
     ]
@@ -280,7 +247,7 @@ def page(lang):
     body = "\n".join([
         header(c, other),
         '<main id="conteudo">',
-        hero(c), cases(c), backstage(c), credits(c), cast(c), contact(c),
+        hero(c), cases(c), cast(c), contact(c),
         "</main>",
         footer(c, other),
         palette(c),
@@ -316,9 +283,7 @@ def terminal():
         payload[lang] = {
             "who": d["who"],
             "cases": [{"name": x["name"], "client": x["client"], "period": x["period"], "desc": x.get("desc") or d["cases"]["soon"]} for x in d["cases"]["items"]] + [{"name": r["name"], "client": "", "period": r["year"], "desc": r["desc"]} for r in d["cases"]["catalog"]],
-            "credits": [{"role": x["role"], "org": x["org"], "period": x["period"]} for x in d["credits"]["items"]],
             "stack": [{"label": t["label"], "items": t["items"]} for t in d["cast"]["tiers"]],
-            "backstage": d["backstage"]["body"],
         }
     title = "Victor Macedo — terminal"
     desc = "Versão terminal do portfólio de Victor Macedo. Digite help."
