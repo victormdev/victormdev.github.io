@@ -1,0 +1,310 @@
+{
+  "_leia_me": "Todo o texto do site está aqui. Edite e rode `python3 tools/build.py` para gerar as páginas. Campos vazios (\"\") ficam escondidos no site — preencha quando tiver o dado.",
+  "site": {
+    "url": "https://victormdev.github.io",
+    "name": "Victor Macedo",
+    "email": "vmadevops@gmail.com",
+    "whatsapp": "5571992068839",
+    "linkedin": "https://www.linkedin.com/in/vmdev/",
+    "github": "https://github.com/victormdev",
+    "instagram": "https://instagram.com/victormdev/",
+    "nugo": "https://www.instagram.com/nugo.digital/",
+    "certification": { "pt": "", "en": "" }
+  },
+  "pt": {
+    "lang": "pt-BR",
+    "ogLocale": "pt_BR",
+    "path": "/",
+    "meta": {
+      "title": "Victor Macedo — Engenheiro de IA conversacional",
+      "description": "Victor Macedo constrói chatbots e agentes de IA para atendimento há oito anos — Compass, Take Blip, XP Inc, Localiza. Cases, carreira, stack e contato."
+    },
+    "skip": "Pular para o conteúdo",
+    "nav": { "cases": "Cases", "backstage": "Bastidores", "credits": "Créditos", "cast": "Elenco", "contact": "Contato", "search": "Buscar (⌘K)", "lang": "EN", "langLabel": "Read in English", "menu": "Abrir busca" },
+    "hero": {
+      "scene": "Cena 01 · Cold open",
+      "kicker": "Nugo apresenta · filmado em Salvador, BA",
+      "first": "Victor",
+      "last": "Macedo.",
+      "logline": "Eu dirijo conversas entre empresas e pessoas. Há oito anos construo chatbots e agentes de IA que atendem clientes de verdade — em bancos, varejo e locadoras.",
+      "starring": "Estrelando",
+      "starringList": "Compass · Take Blip · XP Inc · Localiza · Capgemini · Banco do Brasil · Banco Safra · TV Bahia",
+      "scroll": "Role para começar",
+      "act": "Ato I de IV"
+    },
+    "cases": {
+      "act": "Ato I",
+      "titleA": "Cases em",
+      "titleEm": "destaque",
+      "intro": "Três histórias do meu trabalho com IA conversacional: o contexto, o que eu construí e o que mudou depois.",
+      "resultLabel": "Resultado",
+      "soon": "Em breve",
+      "inProduction": "Em produção",
+      "items": [
+        {
+          "id": "renner",
+          "client": "Renner · via Compass",
+          "period": "2024 →",
+          "name": "Cartões & Faturas",
+          "desc": "Chatbots de atendimento para dúvidas de cartão e fatura da Renner, construídos no squad de AI & ML da Compass com machine learning, RAG e deep learning.",
+          "result": "",
+          "tags": ["LLM", "RAG", "NLP"],
+          "chat": [["user", "Por que minha fatura veio mais alta?"], ["bot", "Achei duas compras parceladas novas neste mês. Quer ver o detalhe de cada uma?"]]
+        },
+        {
+          "id": "sicredi",
+          "client": "Sicredi · via Compass",
+          "period": "2024 →",
+          "name": "Portal RAG",
+          "desc": "Portal em que a IA responde a partir dos documentos da cooperativa — recuperação de contexto antes da geração, e não a memória do modelo.",
+          "result": "",
+          "tags": ["RAG", "LLM", "Busca semântica"],
+          "chat": [["user", "Qual o procedimento para esse caso?"], ["bot", "Encontrei em dois documentos internos. Resumo abaixo, com as fontes."]],
+          "source": "Fonte · doc 4.2"
+        },
+        {
+          "id": "larmobi",
+          "client": "Projeto próprio",
+          "period": "2026",
+          "name": "Larmobi",
+          "desc": "",
+          "soon": true,
+          "result": "",
+          "tags": [],
+          "url": ""
+        }
+      ],
+      "catalogLabel": "Também no catálogo",
+      "catalog": [
+        { "year": "2024 →", "name": "Prevenção a fraudes", "desc": "Robôs de prevenção a fraudes com IBM Orchestrate e RPA Studio, pela Compass." },
+        { "year": "2023", "name": "XP Inc & Rico", "desc": "Estratégia e implementação de chatbots para clientes B2B e B2C." },
+        { "year": "2023", "name": "Localiza", "desc": "Atendimento conversacional no Blip para reservas de carros e compra de seminovos." },
+        { "year": "2022 – 23", "name": "Banco do Brasil", "desc": "Desenvolvimento da análise de crédito, pela Capgemini." },
+        { "year": "2021 – 22", "name": "SafraPay", "desc": "Front-end das páginas da credenciadora de cartões do Banco Safra, pela Act Digital." },
+        { "year": "2021 →", "name": "Nugo", "desc": "Minha empresa de chatbots e automações com IA.", "url": "https://www.instagram.com/nugo.digital/", "linkLabel": "@nugo.digital" },
+        { "year": "Open source", "name": "Agente RAG com Langflow", "desc": "Agente de suporte ao cliente com busca RAG, em Python.", "url": "https://github.com/victormdev/rag-agent-python-langflow", "linkLabel": "GitHub" },
+        { "year": "Open source", "name": "DeepSeek no WhatsApp", "desc": "Integração de um modelo DeepSeek com o WhatsApp, em JavaScript.", "url": "https://github.com/victormdev/deepseek-whatsapp", "linkLabel": "GitHub" }
+      ]
+    },
+    "backstage": {
+      "label": "Interlúdio · Bastidores",
+      "quoteA": "Antes do código, eu montava a grade de programação da",
+      "quoteEm": "TV Bahia",
+      "quoteB": ". Hoje eu monto a sequência de uma conversa.",
+      "body": "Fui Coordenador de Programação na afiliada da Globo: horários, ordem de exibição e as regras legais da transmissão. A mesma disciplina de roteiro vai para cada fluxo conversacional que eu desenho."
+    },
+    "credits": {
+      "act": "Ato II",
+      "title": "Créditos",
+      "intro": "Dezesseis passagens, do suporte técnico à IA. Do mais recente ao mais antigo.",
+      "educationLabel": "Formação",
+      "certificationLabel": "Certificação",
+      "items": [
+        { "role": "AI Developer", "period": "2024 → hoje", "org": "Compass", "desc": "Squad de AI & ML: chatbots de Cartões e Faturas para a Renner, um portal RAG para o Sicredi e robôs de prevenção a fraudes com IBM Orchestrate e RPA Studio." },
+        { "role": "Fundador", "period": "2021 → hoje", "org": "Nugo", "desc": "Minha empresa, especializada em chatbots e automações com Inteligência Artificial." },
+        { "role": "Chatbot Developer", "period": "2024", "org": "OSBR", "desc": "Soluções conversacionais para uma empresa de energia renovável, do desenvolvimento à área de big data." },
+        { "role": "Desenvolvedor Sênior", "period": "2023", "org": "Localiza", "desc": "Experiências de conversação com IA, machine learning e NLP para aluguel e venda de carros." },
+        { "role": "Desenvolvedor Back-end", "period": "2023", "org": "XP Inc", "desc": "Chatbots para clientes B2B e B2C da XP Inc e da corretora Rico." },
+        { "role": "Consultor Sênior", "period": "2022 → 2023", "org": "Capgemini", "desc": "Portais de dois grandes bancos brasileiros, com big data e mobile — incluindo a análise de crédito do Banco do Brasil." },
+        { "role": "Front-end Pleno", "period": "2021 → 2022", "org": "Act Digital", "desc": "Experiência do SafraPay, credenciadora de cartões do Banco Safra." },
+        { "role": "Chatbot Developer", "period": "2021 → 2022", "org": "Take Blip", "desc": "Chatbots para grandes empresas nacionais e internacionais, com IA, machine learning e NLP." },
+        { "role": "Desenvolvedor Mobile", "period": "2020 → 2021", "org": "Bisnez", "desc": "App que conecta empreendedores para parcerias e networking." },
+        { "role": "Coordenador de Programação", "period": "2020 → 2021", "org": "TV Bahia", "desc": "Execução dos programas e mapas de programação da afiliada da Globo, incluindo as exigências legais." },
+        { "role": "Bolsista", "period": "2020 → 2021", "org": "NETI · IFBA", "desc": "" },
+        { "role": "Pesquisador", "period": "2020", "org": "GSORT · IFBA", "desc": "Sistema de prontuários para terapeutas ocupacionais usando a CIF como modelo de classificação." },
+        { "role": "Desenvolvedor Full-stack", "period": "2020", "org": "Automind", "desc": "Portal para gestão dos sistemas de medição de petróleo, químicos e biocombustíveis." },
+        { "role": "Analista de Sistemas Jr.", "period": "2019 → 2020", "org": "X-Testing", "desc": "Portal em Angular 8 e projetos de IA e chatbots para clientes de vários segmentos." },
+        { "role": "Desenvolvedor Front-end", "period": "2019", "org": "Instituto Recôncavo de Tecnologia", "desc": "Aplicação web embarcada em equipamento de rádio/modem." },
+        { "role": "Suporte Técnico", "period": "2018 → 2019", "org": "Stagliorio Engenharia", "desc": "Bancos de dados, servidores e automação de rotinas." }
+      ],
+      "education": [
+        { "course": "Análise e Desenvolvimento de Sistemas", "org": "IFBA", "period": "2018 → 2022" },
+        { "course": "Tecnologia em Transporte Terrestre", "org": "UFBA", "period": "2018" }
+      ]
+    },
+    "cast": {
+      "act": "Ato III",
+      "titleA": "O",
+      "titleEm": "elenco",
+      "intro": "Cada ferramenta no papel que ela tem de verdade no meu dia a dia.",
+      "tiers": [
+        { "label": "Elenco principal · uso diário", "items": ["RAG", "LLM", "NLP", "Python", "Node.js", "TypeScript", "Angular", "JavaScript"] },
+        { "label": "Elenco de apoio · uso frequente", "items": ["IBM Watson", "Blip", "Node-RED", "Java", "Spring Boot", "PostgreSQL", "Vue.js", "Flutter", "Firebase", "HTML", "CSS"] },
+        { "label": "Participação especial · já em produção", "items": ["MongoDB", "MySQL", "IBM Cloud", "jQuery", "Thymeleaf"] }
+      ]
+    },
+    "contact": {
+      "label": "Cena pós-créditos",
+      "titleA": "A próxima cena",
+      "titleEm": "é sua.",
+      "body": "Projetos de chatbot e IA, consultoria pela Nugo ou mentoria para quem quer entrar e crescer em tecnologia.",
+      "messageLabel": "Sua mensagem",
+      "messagePlaceholder": "Conte em duas linhas o que você precisa — o botão abre seu e-mail já preenchido.",
+      "subject": "Contato pelo portfólio",
+      "greeting": "Olá, Victor! Vim pelo seu portfólio.",
+      "emailCta": "Enviar e-mail",
+      "whatsapp": "WhatsApp",
+      "copyEmail": "Copiar e-mail",
+      "copied": "E-mail copiado"
+    },
+    "footer": { "copy": "© 2026 Victor Macedo", "note": "Fim · feito com café e commits pequenos", "terminal": "Versão terminal" },
+    "palette": {
+      "title": "Busca",
+      "placeholder": "buscar seções, cases, ações…",
+      "empty": "Nada encontrado.",
+      "groups": { "sec": "seção", "case": "case", "act": "ação" },
+      "actions": { "copy": "Copiar e-mail", "lang": "Read in English", "terminal": "Abrir versão terminal", "top": "Voltar ao topo", "whatsapp": "Abrir WhatsApp" },
+      "close": "Fechar"
+    },
+    "who": "Victor Macedo é engenheiro de IA conversacional em Salvador, BA. Há oito anos constrói chatbots e agentes de IA para atendimento — hoje no squad de AI & ML da Compass, antes na Take Blip, XP Inc e Localiza. Trabalha de ponta a ponta: front-end, back-end, mobile, dados e IA.",
+    "notFound": { "title": "Cena cortada.", "body": "Essa página ficou na sala de edição. O filme continua na página inicial.", "back": "Voltar ao início" }
+  },
+  "en": {
+    "lang": "en",
+    "ogLocale": "en_US",
+    "path": "/en/",
+    "meta": {
+      "title": "Victor Macedo — Conversational AI Engineer",
+      "description": "Victor Macedo has spent eight years building chatbots and AI agents for customer service — Compass, Take Blip, XP Inc, Localiza. Cases, career, stack and contact."
+    },
+    "skip": "Skip to content",
+    "nav": { "cases": "Cases", "backstage": "Backstage", "credits": "Credits", "cast": "Cast", "contact": "Contact", "search": "Search (⌘K)", "lang": "PT", "langLabel": "Ler em português", "menu": "Open search" },
+    "hero": {
+      "scene": "Scene 01 · Cold open",
+      "kicker": "Nugo presents · shot in Salvador, Brazil",
+      "first": "Victor",
+      "last": "Macedo.",
+      "logline": "I direct conversations between companies and people. For eight years I've built chatbots and AI agents that serve real customers — in banking, retail and car rental.",
+      "starring": "Starring",
+      "starringList": "Compass · Take Blip · XP Inc · Localiza · Capgemini · Banco do Brasil · Banco Safra · TV Bahia",
+      "scroll": "Scroll to begin",
+      "act": "Act I of IV"
+    },
+    "cases": {
+      "act": "Act I",
+      "titleA": "Featured",
+      "titleEm": "cases",
+      "intro": "Three stories from my conversational-AI work: the context, what I built and what changed after.",
+      "resultLabel": "Result",
+      "soon": "Coming soon",
+      "inProduction": "In production",
+      "items": [
+        {
+          "id": "renner",
+          "client": "Renner · via Compass",
+          "period": "2024 →",
+          "name": "Cards & Invoices",
+          "desc": "Customer-service chatbots for Renner's card and invoice questions, built in Compass's AI & ML squad with machine learning, RAG and deep learning.",
+          "result": "",
+          "tags": ["LLM", "RAG", "NLP"],
+          "chat": [["user", "Why is my bill higher this month?"], ["bot", "I found two new instalment purchases this month. Want the breakdown?"]]
+        },
+        {
+          "id": "sicredi",
+          "client": "Sicredi · via Compass",
+          "period": "2024 →",
+          "name": "RAG Portal",
+          "desc": "A portal where AI answers from the cooperative's own documents — context retrieval before generation, not the model's memory.",
+          "result": "",
+          "tags": ["RAG", "LLM", "Semantic search"],
+          "chat": [["user", "What's the procedure for this case?"], ["bot", "I found it in two internal documents. Summary below, with sources."]],
+          "source": "Source · doc 4.2"
+        },
+        {
+          "id": "larmobi",
+          "client": "Own project",
+          "period": "2026",
+          "name": "Larmobi",
+          "desc": "",
+          "soon": true,
+          "result": "",
+          "tags": [],
+          "url": ""
+        }
+      ],
+      "catalogLabel": "Also in the catalogue",
+      "catalog": [
+        { "year": "2024 →", "name": "Fraud prevention", "desc": "Fraud-prevention bots with IBM Orchestrate and RPA Studio, at Compass." },
+        { "year": "2023", "name": "XP Inc & Rico", "desc": "Chatbot strategy and implementation for B2B and B2C clients." },
+        { "year": "2023", "name": "Localiza", "desc": "Conversational service on Blip for car bookings and used-car sales." },
+        { "year": "2022 – 23", "name": "Banco do Brasil", "desc": "Built the credit-analysis product, at Capgemini." },
+        { "year": "2021 – 22", "name": "SafraPay", "desc": "Front-end for Banco Safra's card-acquiring product, at Act Digital." },
+        { "year": "2021 →", "name": "Nugo", "desc": "My own chatbot and AI-automation company.", "url": "https://www.instagram.com/nugo.digital/", "linkLabel": "@nugo.digital" },
+        { "year": "Open source", "name": "RAG agent with Langflow", "desc": "A customer-support agent using RAG search, in Python.", "url": "https://github.com/victormdev/rag-agent-python-langflow", "linkLabel": "GitHub" },
+        { "year": "Open source", "name": "DeepSeek on WhatsApp", "desc": "A DeepSeek model integrated with WhatsApp, in JavaScript.", "url": "https://github.com/victormdev/deepseek-whatsapp", "linkLabel": "GitHub" }
+      ]
+    },
+    "backstage": {
+      "label": "Interlude · Backstage",
+      "quoteA": "Before code, I built the broadcast schedule at",
+      "quoteEm": "TV Bahia",
+      "quoteB": ". Now I build the sequence of a conversation.",
+      "body": "I was Programming Coordinator at the Rede Globo affiliate: time slots, running order and the legal rules of broadcasting. The same script discipline goes into every conversational flow I design."
+    },
+    "credits": {
+      "act": "Act II",
+      "title": "Credits",
+      "intro": "Sixteen stops, from tech support to AI. Most recent first.",
+      "educationLabel": "Education",
+      "certificationLabel": "Certification",
+      "items": [
+        { "role": "AI Developer", "period": "2024 → now", "org": "Compass", "desc": "AI & ML squad: Cards and Invoices chatbots for Renner, a RAG portal for Sicredi and fraud-prevention bots with IBM Orchestrate and RPA Studio." },
+        { "role": "Founder", "period": "2021 → now", "org": "Nugo", "desc": "My own company, specialised in chatbots and AI automation." },
+        { "role": "Chatbot Developer", "period": "2024", "org": "OSBR", "desc": "Conversational solutions for a renewable-energy company, from development to big data." },
+        { "role": "Senior Developer", "period": "2023", "org": "Localiza", "desc": "Conversational experiences with AI, machine learning and NLP for car rental and sales." },
+        { "role": "Back-end Developer", "period": "2023", "org": "XP Inc", "desc": "Chatbots for B2B and B2C clients of XP Inc and the Rico brokerage." },
+        { "role": "Senior Consultant", "period": "2022 → 2023", "org": "Capgemini", "desc": "Portals for two major Brazilian banks, with big data and mobile — including Banco do Brasil's credit analysis." },
+        { "role": "Front-end Developer", "period": "2021 → 2022", "org": "Act Digital", "desc": "The SafraPay experience, Banco Safra's card acquirer." },
+        { "role": "Chatbot Developer", "period": "2021 → 2022", "org": "Take Blip", "desc": "Chatbots for large national and international companies, with AI, machine learning and NLP." },
+        { "role": "Mobile Developer", "period": "2020 → 2021", "org": "Bisnez", "desc": "An app connecting entrepreneurs for partnerships and networking." },
+        { "role": "Programming Coordinator", "period": "2020 → 2021", "org": "TV Bahia", "desc": "Programme execution and broadcast schedules at the Rede Globo affiliate, including legal requirements." },
+        { "role": "Research Fellow", "period": "2020 → 2021", "org": "NETI · IFBA", "desc": "" },
+        { "role": "Researcher", "period": "2020", "org": "GSORT · IFBA", "desc": "A records system for occupational therapists using the ICF classification model." },
+        { "role": "Full-stack Developer", "period": "2020", "org": "Automind", "desc": "A portal for managing oil, chemical and biofuel measurement systems." },
+        { "role": "Junior Systems Analyst", "period": "2019 → 2020", "org": "X-Testing", "desc": "An Angular 8 portal plus AI and chatbot projects for clients across industries." },
+        { "role": "Front-end Developer", "period": "2019", "org": "Instituto Recôncavo de Tecnologia", "desc": "A web app embedded in radio/modem hardware." },
+        { "role": "Technical Support", "period": "2018 → 2019", "org": "Stagliorio Engenharia", "desc": "Databases, servers and routine automation." }
+      ],
+      "education": [
+        { "course": "Systems Analysis and Development", "org": "IFBA", "period": "2018 → 2022" },
+        { "course": "Land Transport Technology", "org": "UFBA", "period": "2018" }
+      ]
+    },
+    "cast": {
+      "act": "Act III",
+      "titleA": "The",
+      "titleEm": "cast",
+      "intro": "Each tool in the role it actually plays in my day-to-day.",
+      "tiers": [
+        { "label": "Lead cast · daily", "items": ["RAG", "LLM", "NLP", "Python", "Node.js", "TypeScript", "Angular", "JavaScript"] },
+        { "label": "Supporting cast · frequent", "items": ["IBM Watson", "Blip", "Node-RED", "Java", "Spring Boot", "PostgreSQL", "Vue.js", "Flutter", "Firebase", "HTML", "CSS"] },
+        { "label": "Special appearance · shipped to production", "items": ["MongoDB", "MySQL", "IBM Cloud", "jQuery", "Thymeleaf"] }
+      ]
+    },
+    "contact": {
+      "label": "Post-credits scene",
+      "titleA": "The next scene",
+      "titleEm": "is yours.",
+      "body": "Chatbot and AI projects, consulting through Nugo, or mentoring for anyone breaking into and growing in tech.",
+      "messageLabel": "Your message",
+      "messagePlaceholder": "Tell me in two lines what you need — the button opens your email, prefilled.",
+      "subject": "Hello from your portfolio",
+      "greeting": "Hi Victor! I found you through your portfolio.",
+      "emailCta": "Send email",
+      "whatsapp": "WhatsApp",
+      "copyEmail": "Copy email",
+      "copied": "Email copied"
+    },
+    "footer": { "copy": "© 2026 Victor Macedo", "note": "The end · built with coffee and small commits", "terminal": "Terminal version" },
+    "palette": {
+      "title": "Search",
+      "placeholder": "search sections, cases, actions…",
+      "empty": "Nothing found.",
+      "groups": { "sec": "section", "case": "case", "act": "action" },
+      "actions": { "copy": "Copy email", "lang": "Ler em português", "terminal": "Open terminal version", "top": "Back to top", "whatsapp": "Open WhatsApp" },
+      "close": "Close"
+    },
+    "who": "Victor Macedo is a conversational-AI engineer based in Salvador, Brazil. For eight years he has built chatbots and AI agents for customer service — currently in Compass's AI & ML squad, previously at Take Blip, XP Inc and Localiza. He works end to end: front-end, back-end, mobile, data and AI.",
+    "notFound": { "title": "Scene cut.", "body": "This page stayed in the editing room. The film continues on the home page.", "back": "Back to the start" }
+  }
+}
