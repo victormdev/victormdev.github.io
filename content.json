@@ -40,6 +40,7 @@
       "resultLabel": "Resultado",
       "soon": "Em breve",
       "inProduction": "Em desenvolvimento",
+      "live": "No ar",
       "items": [
         {
           "id": "renner",
@@ -67,11 +68,11 @@
           "client": "Projeto próprio",
           "period": "2026",
           "name": "Larmobi",
-          "desc": "",
-          "soon": true,
+          "desc": "Marketplace de móveis planejados que conecta clientes a marceneiros. Já no ar, com os primeiros cadastros dos dois lados.",
+          "live": true,
           "result": "",
-          "tags": [],
-          "url": ""
+          "tags": ["Marketplace", "Produto próprio"],
+          "url": "https://larmobi.com.br"
         }
       ],
       "catalogLabel": "Também no catálogo",
@@ -153,6 +154,7 @@
       "resultLabel": "Result",
       "soon": "Coming soon",
       "inProduction": "In development",
+      "live": "Live",
       "items": [
         {
           "id": "renner",
@@ -180,11 +182,11 @@
           "client": "Own project",
           "period": "2026",
           "name": "Larmobi",
-          "desc": "",
-          "soon": true,
+          "desc": "A custom-furniture marketplace connecting customers with carpenters. Live, with its first sign-ups on both sides.",
+          "live": true,
           "result": "",
-          "tags": [],
-          "url": ""
+          "tags": ["Marketplace", "Own product"],
+          "url": "https://larmobi.com.br"
         }
       ],
       "catalogLabel": "Also in the catalogue",
