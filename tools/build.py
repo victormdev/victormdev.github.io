@@ -108,7 +108,6 @@ def header(c, other):
 
 def hero(c):
     h = c["hero"]
-    chips = "".join(f'<button type="button" class="chip" data-ask="{e(q)}">{e(q)}</button>' for q in h["chips"])
     return f"""<section class="hero" id="top" data-scene="{e(h['scene'])}">
   <div class="hero__light" id="light" aria-hidden="true"></div>
   <svg class="grain" aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
@@ -116,21 +115,6 @@ def hero(c):
     <p class="kicker mono"><span class="rec" aria-hidden="true"></span>{e(h['kicker'])}</p>
     <h1 class="hero__title"><span class="line">{e(h['first'])}</span><span class="line"><em>{e(h['last'])}</em></span></h1>
     <p class="hero__logline">{e(h['logline'])}</p>
-    <div class="agent">
-      <form class="agent__form" id="ask" autocomplete="off">
-        <label class="label mono" for="ask-input">{e(h['askLabel'])}</label>
-        <div class="agent__field">
-          <span class="prompt mono" aria-hidden="true">&gt;</span>
-          <input id="ask-input" name="q" type="text" placeholder="{e(h['askPlaceholders'][0])}" maxlength="200" enterkeyhint="send">
-          <button type="submit" class="btn btn--accent">{e(h['askButton'])}</button>
-        </div>
-      </form>
-      <div class="chips">{chips}</div>
-      <div class="agent__answer" id="answer" aria-live="polite" hidden>
-        <span class="agent__avatar" aria-hidden="true">VM</span>
-        <div><p id="answer-text"></p><p class="agent__source" id="answer-source" hidden></p></div>
-      </div>
-    </div>
     <p class="billing"><span class="mono">{e(h['starring'])}</span> <span class="billing__names">{e(h['starringList'])}</span></p>
   </div>
   <div class="bar bar--hero mono" aria-hidden="true">
@@ -272,29 +256,16 @@ def client_data(c):
         {"id": "elenco", "label": c["nav"]["cast"]},
         {"id": "contato", "label": c["nav"]["contact"]},
     ]
-    kb = list(c["kb"])
-    for cs in c["cases"]["items"]:
-        if cs.get("desc"):
-            kb.append({"title": cs["name"], "section": "case-" + cs["id"], "keywords": cs["client"] + " " + " ".join(cs.get("tags", [])), "text": cs["desc"] + (" " + c["cases"]["resultLabel"] + ": " + cs["result"] if cs.get("result") else "")})
-    for r in c["cases"]["catalog"]:
-        kb.append({"title": r["name"], "section": "cases", "keywords": r["year"], "text": r["name"] + " (" + r["year"] + "): " + r["desc"]})
-    for it in c["credits"]["items"]:
-        if it.get("desc"):
-            kb.append({"title": it["org"], "section": "creditos", "keywords": it["role"] + " " + it["period"], "text": it["org"] + " — " + it["role"] + " (" + it["period"] + "). " + it["desc"]})
     return {
         "lang": c["lang"],
         "path": c["path"],
         "otherPath": "/en/" if c["lang"] != "en" else "/",
         "email": SITE["email"],
         "whatsapp": SITE["whatsapp"],
-        "endpoint": SITE.get("agentEndpoint", ""),
-        "placeholders": c["hero"]["askPlaceholders"],
-        "agent": c["agent"],
         "palette": c["palette"],
         "contact": {"copied": c["contact"]["copied"]},
         "sections": sections,
         "cases": [{"id": cs["id"], "label": cs["name"] + " · " + cs["client"]} for cs in c["cases"]["items"]],
-        "kb": kb,
     }
 
 
@@ -314,7 +285,6 @@ def page(lang):
         footer(c, other),
         palette(c),
         data_script(client_data(c)),
-        f'<script src="/assets/js/agent.js?v={VERSION}" defer></script>',
         f'<script src="/assets/js/site.js?v={VERSION}" defer></script>',
     ])
     return head(c, other, extra=json_ld(c)) + f'\n<body>\n{body}\n</body>\n</html>\n'
@@ -344,13 +314,11 @@ def terminal():
     for lang in ("pt", "en"):
         d = DATA[lang]
         payload[lang] = {
-            "who": d["kb"][0]["text"],
+            "who": d["who"],
             "cases": [{"name": x["name"], "client": x["client"], "period": x["period"], "desc": x.get("desc") or d["cases"]["soon"]} for x in d["cases"]["items"]] + [{"name": r["name"], "client": "", "period": r["year"], "desc": r["desc"]} for r in d["cases"]["catalog"]],
             "credits": [{"role": x["role"], "org": x["org"], "period": x["period"]} for x in d["credits"]["items"]],
             "stack": [{"label": t["label"], "items": t["items"]} for t in d["cast"]["tiers"]],
             "backstage": d["backstage"]["body"],
-            "kb": d["kb"],
-            "fallback": d["agent"]["fallback"],
         }
     title = "Victor Macedo — terminal"
     desc = "Versão terminal do portfólio de Victor Macedo. Digite help."
@@ -366,7 +334,6 @@ def terminal():
   </form>
 </main>
 {data_script(payload)}
-<script src="/assets/js/agent.js?v={VERSION}" defer></script>
 <script src="/assets/js/terminal.js?v={VERSION}" defer></script>
 </body>
 </html>

@@ -9,7 +9,6 @@
     "github": "https://github.com/victormdev",
     "instagram": "https://instagram.com/victormdev/",
     "nugo": "https://www.instagram.com/nugo.digital/",
-    "agentEndpoint": "",
     "certification": { "pt": "", "en": "" }
   },
   "pt": {
@@ -28,10 +27,6 @@
       "first": "Victor",
       "last": "Macedo.",
       "logline": "Eu dirijo conversas entre empresas e pessoas. Há oito anos construo chatbots e agentes de IA que atendem clientes de verdade — em bancos, varejo e locadoras.",
-      "askLabel": "Pergunte ao meu agente — ele leu meu currículo inteiro",
-      "askPlaceholders": ["o que você faz?", "onde você já trabalhou?", "você faz mentoria?", "o que é a Nugo?", "já trabalhou com TV?"],
-      "askButton": "Perguntar",
-      "chips": ["o que você faz?", "onde você já trabalhou?", "você faz mentoria?", "já trabalhou com TV?"],
       "starring": "Estrelando",
       "starringList": "Compass · Take Blip · XP Inc · Localiza · Capgemini · Banco do Brasil · Banco Safra · TV Bahia",
       "scroll": "Role para começar",
@@ -153,13 +148,6 @@
       "copied": "E-mail copiado"
     },
     "footer": { "copy": "© 2026 Victor Macedo", "note": "Fim · feito com café e commits pequenos", "terminal": "Versão terminal" },
-    "agent": {
-      "fallback": "Essa eu não encontrei no meu material. Tente perguntar sobre um projeto, uma empresa, a stack ou como falar comigo — ou use ⌘K para ir direto a qualquer parte do site.",
-      "sourceLabel": "Fonte",
-      "seeAlso": "Veja também",
-      "intro": "Oi! Sou o agente do Victor. Respondo com base no currículo dele e sempre mostro a fonte.",
-      "busy": "procurando…"
-    },
     "palette": {
       "title": "Busca",
       "placeholder": "buscar seções, cases, ações…",
@@ -168,17 +156,7 @@
       "actions": { "copy": "Copiar e-mail", "lang": "Read in English", "terminal": "Abrir versão terminal", "top": "Voltar ao topo", "whatsapp": "Abrir WhatsApp" },
       "close": "Fechar"
     },
-    "kb": [
-      { "title": "Quem é o Victor", "section": "top", "keywords": "quem voce e sobre apresentacao perfil especialista resumo faz trabalho atua", "text": "Victor Macedo é engenheiro de IA conversacional em Salvador, BA. Há oito anos constrói chatbots e agentes de IA para atendimento — hoje no squad de AI & ML da Compass, antes na Take Blip, XP Inc e Localiza. Trabalha de ponta a ponta: front-end, back-end, mobile, dados e IA." },
-      { "title": "Mentoria e consultoria", "section": "contato", "keywords": "mentoria mentor consultoria aula ensinar carreira entrar mercado ajuda orientacao freela freelancer", "text": "Sim — Victor faz mentorias e consultorias para quem quer entrar e se destacar em tecnologia, e aceita projetos freelance quando tem agenda. O contato está na cena pós-créditos, no fim da página." },
-      { "title": "Contato", "section": "contato", "keywords": "contato falar email e-mail whatsapp linkedin contratar chamar mensagem telefone", "text": "O caminho mais rápido é WhatsApp ou e-mail (vmadevops@gmail.com). Também dá para escrever no campo de mensagem no fim da página — o botão abre seu e-mail já preenchido." },
-      { "title": "Onde já trabalhou", "section": "creditos", "keywords": "onde trabalhou empresas experiencia carreira passagens empregos clientes", "text": "Compass, Take Blip, XP Inc, Localiza, Capgemini (Banco do Brasil), Act Digital (Banco Safra), OSBR — e antes disso TV Bahia, IFBA e outras. São dezesseis passagens na seção Créditos." },
-      { "title": "Nugo", "section": "cases", "keywords": "nugo empresa fundador startup propria negocio", "text": "A Nugo é a empresa do Victor, fundada em 2021, especializada em chatbots e automações com IA. Pelo Instagram @nugo.digital ele também compartilha leituras sobre o mercado." },
-      { "title": "TV Bahia", "section": "bastidores", "keywords": "tv televisao globo bahia programacao fora tecnologia antes", "text": "Victor foi Coordenador de Programação na TV Bahia, afiliada da Globo: montava a grade, a ordem de exibição e cuidava das exigências legais da transmissão." },
-      { "title": "Larmobi", "section": "cases", "keywords": "larmobi projeto novo atual construindo", "text": "A Larmobi é o projeto próprio que o Victor está construindo agora, em 2026. Os detalhes saem em breve." },
-      { "title": "Stack", "section": "elenco", "keywords": "stack tecnologias ferramentas linguagens usa sabe skills habilidades", "text": "No dia a dia: RAG, LLM, NLP, Python, Node.js, TypeScript, Angular e JavaScript. Com frequência: IBM Watson, Blip, Node-RED, Java, Spring Boot, PostgreSQL, Vue.js e Flutter." },
-      { "title": "Formação", "section": "creditos", "keywords": "formacao faculdade graduacao estudou curso universidade ifba", "text": "Victor é formado em Análise e Desenvolvimento de Sistemas pelo IFBA (2018–2022)." }
-    ],
+    "who": "Victor Macedo é engenheiro de IA conversacional em Salvador, BA. Há oito anos constrói chatbots e agentes de IA para atendimento — hoje no squad de AI & ML da Compass, antes na Take Blip, XP Inc e Localiza. Trabalha de ponta a ponta: front-end, back-end, mobile, dados e IA.",
     "notFound": { "title": "Cena cortada.", "body": "Essa página ficou na sala de edição. O filme continua na página inicial.", "back": "Voltar ao início" }
   },
   "en": {
@@ -197,10 +175,6 @@
       "first": "Victor",
       "last": "Macedo.",
       "logline": "I direct conversations between companies and people. For eight years I've built chatbots and AI agents that serve real customers — in banking, retail and car rental.",
-      "askLabel": "Ask my agent — it has read my whole résumé",
-      "askPlaceholders": ["what do you do?", "where have you worked?", "do you mentor?", "what is Nugo?", "did you work in TV?"],
-      "askButton": "Ask",
-      "chips": ["what do you do?", "where have you worked?", "do you mentor?", "did you work in TV?"],
       "starring": "Starring",
       "starringList": "Compass · Take Blip · XP Inc · Localiza · Capgemini · Banco do Brasil · Banco Safra · TV Bahia",
       "scroll": "Scroll to begin",
@@ -322,13 +296,6 @@
       "copied": "Email copied"
     },
     "footer": { "copy": "© 2026 Victor Macedo", "note": "The end · built with coffee and small commits", "terminal": "Terminal version" },
-    "agent": {
-      "fallback": "I couldn't find that in my material. Try asking about a project, a company, the stack or how to reach me — or press ⌘K to jump anywhere on the site.",
-      "sourceLabel": "Source",
-      "seeAlso": "See also",
-      "intro": "Hi! I'm Victor's agent. I answer from his résumé and always show the source.",
-      "busy": "searching…"
-    },
     "palette": {
       "title": "Search",
       "placeholder": "search sections, cases, actions…",
@@ -337,17 +304,7 @@
       "actions": { "copy": "Copy email", "lang": "Ler em português", "terminal": "Open terminal version", "top": "Back to top", "whatsapp": "Open WhatsApp" },
       "close": "Close"
     },
-    "kb": [
-      { "title": "Who Victor is", "section": "top", "keywords": "who are you about intro profile specialist summary do work role", "text": "Victor Macedo is a conversational-AI engineer based in Salvador, Brazil. For eight years he has built chatbots and AI agents for customer service — currently in Compass's AI & ML squad, previously at Take Blip, XP Inc and Localiza. He works end to end: front-end, back-end, mobile, data and AI." },
-      { "title": "Mentoring and consulting", "section": "contato", "keywords": "mentor mentoring mentorship consulting teach career break into help guidance freelance", "text": "Yes — Victor mentors and consults for people who want to break into and stand out in tech, and takes freelance work when he has time. Contact is in the post-credits scene at the bottom of the page." },
-      { "title": "Contact", "section": "contato", "keywords": "contact reach email whatsapp linkedin hire message phone talk", "text": "The quickest routes are WhatsApp or email (vmadevops@gmail.com). You can also type in the message box at the bottom — the button opens your email, prefilled." },
-      { "title": "Where he has worked", "section": "creditos", "keywords": "where worked companies experience career jobs employers clients", "text": "Compass, Take Blip, XP Inc, Localiza, Capgemini (Banco do Brasil), Act Digital (Banco Safra), OSBR — and before that TV Bahia, IFBA and others. Sixteen stops in the Credits section." },
-      { "title": "Nugo", "section": "cases", "keywords": "nugo company founder startup own business", "text": "Nugo is Victor's company, founded in 2021, specialised in chatbots and AI automation. On Instagram (@nugo.digital) he also shares takes on the market." },
-      { "title": "TV Bahia", "section": "bastidores", "keywords": "tv television broadcast globo bahia programming outside tech before", "text": "Victor was Programming Coordinator at TV Bahia, a Rede Globo affiliate: he built the schedule, the running order and handled broadcasting's legal requirements." },
-      { "title": "Larmobi", "section": "cases", "keywords": "larmobi project new current building", "text": "Larmobi is the own project Victor is building now, in 2026. Details coming soon." },
-      { "title": "Stack", "section": "elenco", "keywords": "stack technologies tools languages use know skills", "text": "Daily: RAG, LLM, NLP, Python, Node.js, TypeScript, Angular and JavaScript. Frequently: IBM Watson, Blip, Node-RED, Java, Spring Boot, PostgreSQL, Vue.js and Flutter." },
-      { "title": "Education", "section": "creditos", "keywords": "education degree college university studied course ifba", "text": "Victor holds a degree in Systems Analysis and Development from IFBA (2018–2022)." }
-    ],
+    "who": "Victor Macedo is a conversational-AI engineer based in Salvador, Brazil. For eight years he has built chatbots and AI agents for customer service — currently in Compass's AI & ML squad, previously at Take Blip, XP Inc and Localiza. He works end to end: front-end, back-end, mobile, data and AI.",
     "notFound": { "title": "Scene cut.", "body": "This page stayed in the editing room. The film continues on the home page.", "back": "Back to the start" }
   }
 }

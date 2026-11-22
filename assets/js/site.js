@@ -96,69 +96,7 @@
     }, { passive: true });
   }
 
-  /* ---------- Agent: local retrieval over the résumé, with sources ---------- */
-  var search = window.VMAgent.search, norm = window.VMAgent.norm;
-
-  var form = $("#ask"), input = $("#ask-input"), ans = $("#answer"), ansText = $("#answer-text"), ansSrc = $("#answer-source");
-  var typer = null;
-  function typeOut(text, done) {
-    clearInterval(typer);
-    ansText.classList.add("typing");
-    if (reduce) { ansText.textContent = text; ansText.classList.remove("typing"); done && done(); return; }
-    var i = 0;
-    ansText.textContent = "";
-    typer = setInterval(function () {
-      i += 2;
-      ansText.textContent = text.slice(0, i);
-      if (i >= text.length) { clearInterval(typer); ansText.classList.remove("typing"); done && done(); }
-    }, 14);
-  }
-  function sourceLinks(hits) {
-    ansSrc.innerHTML = "";
-    if (!hits.length) { ansSrc.hidden = true; return; }
-    hits.forEach(function (h, i) {
-      var a = document.createElement("a");
-      a.href = "#" + (h.d.section || "top");
-      a.textContent = (i === 0 ? D.agent.sourceLabel : D.agent.seeAlso) + " · " + h.d.title;
-      ansSrc.appendChild(a);
-    });
-    ansSrc.hidden = false;
-  }
-  function answerLocal(q) {
-    var hits = search(q);
-    if (!hits.length) return { text: D.agent.fallback, hits: [] };
-    var extra = hits.slice(1, 3).filter(function (h) { return h.s > hits[0].s * 0.55 && h.d.title !== hits[0].d.title; });
-    return { text: hits[0].d.text, hits: [hits[0]].concat(extra) };
-  }
-  function ask(q) {
-    q = String(q || "").trim();
-    if (!q) return;
-    ans.hidden = false;
-    $$(".chip").forEach(function (c) { c.setAttribute("aria-pressed", c.dataset.ask === q ? "true" : "false"); });
-    var local = answerLocal(q);
-    var show = function (text, hits) { ansSrc.hidden = true; typeOut(text, function () { sourceLinks(hits); }); };
-    if (!D.endpoint) return show(local.text, local.hits);
-    /* Optional LLM backend: receives the question plus the retrieved context (RAG). Falls back to local retrieval. */
-    ansText.textContent = D.agent.busy; ansText.classList.add("typing");
-    var ctrl = "AbortController" in window ? new AbortController() : null;
-    var to = setTimeout(function () { ctrl && ctrl.abort(); }, 12000);
-    fetch(D.endpoint, {
-      method: "POST", headers: { "Content-Type": "application/json" }, signal: ctrl && ctrl.signal,
-      body: JSON.stringify({ question: q, lang: D.lang, context: search(q).slice(0, 4).map(function (h) { return { title: h.d.title, text: h.d.text }; }) })
-    }).then(function (r) { if (!r.ok) throw 0; return r.json(); })
-      .then(function (j) { clearTimeout(to); show(j.answer || local.text, local.hits); })
-      .catch(function () { clearTimeout(to); show(local.text, local.hits); });
-  }
-  if (form) {
-    form.addEventListener("submit", function (e) { e.preventDefault(); ask(input.value); });
-    $$(".chip").forEach(function (c) { c.addEventListener("click", function () { input.value = c.dataset.ask; ask(c.dataset.ask); }); });
-    var ph = 0;
-    setInterval(function () {
-      if (document.activeElement === input || input.value) return;
-      ph = (ph + 1) % D.placeholders.length;
-      input.placeholder = D.placeholders[ph];
-    }, 3600);
-  }
+  function norm(s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
 
   /* ---------- Contact: message → prefilled email / WhatsApp ---------- */
   var msg = $("#message"), msgText = $("#message-text"), wa = $("#whatsapp");
